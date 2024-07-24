@@ -1,0 +1,51 @@
+.dis-scroll {
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  overscroll-behavior: none;
+}
+
+.page--ios .dis-scroll {
+  position: relative;
+}
+
+.visually-hidden {
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  margin: 0;
+  border: none;
+  padding: 0;
+  width: 0;
+  height: 0;
+}
+
+.cover-pic,
+.contain-pic {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cover-pic {
+  object-fit: cover;
+}
+
+.contain-pic {
+  object-fit: contain;
+}
+
+.footer-page {
+  margin-top: auto;
+}
+
+.block-wrapper {
+  margin-bottom: 40px;
+  padding: 10px;
+  background-color: hsl(0deg, 0%, 95%);
+}

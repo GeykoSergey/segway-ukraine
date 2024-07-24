@@ -1,0 +1,112 @@
+// порядок focus hover active
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  margin: 0;
+  border: 0;
+  border-radius: $border-radius;
+  padding: $field-padding-vertical $field-padding-horizontal;
+  max-width: 100%;
+  font-family: inherit;
+  font-size: 1em;
+  line-height: $line-height;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  text-transform: none;
+  color: $text-color;
+  background-image: none;
+  background-color: $gray-lightest;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+
+  &:focus {
+    border-color: $gray-darken;
+    text-decoration: none;
+    color: $text-color;
+    background-color: $gray-darken;
+  }
+
+  // отключаем focus мышкой
+  // &:focus {
+  //   outline: 0;
+  // }
+
+  // &:focus-visible {
+  //   outline: 0;
+  //   box-shadow: 0 0 0 2px rgba($color-main, $opacity);
+  // }
+  // остается фокус с клавиатуры
+  // нужен полифил
+
+  @media (any-hover: hover) {
+    &:hover {
+      border-color: $gray-darken;
+      box-shadow: $shadow;
+      text-decoration: none;
+      color: $text-color;
+      background-color: $gray-darken;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      border-color: $gray-darken;
+      text-decoration: none;
+      color: $text-color;
+      background-color: $gray-darken;
+    }
+  }
+
+  &:visited {
+    color: $text-color;
+  }
+
+  &:active,
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba($color-main, $opacity);
+  }
+
+  &--disabled,
+  &:disabled {
+    border-color: $gray-lighter;
+    color: $text-color;
+    background-color: $gray-lightest;
+    opacity: $opacity;
+    cursor: not-allowed;
+
+    @at-root a.btn--disabled {
+      pointer-events: none;
+    }
+  }
+
+  // &__icon {
+  //   display: inline-block;
+  //   vertical-align: middle;
+  // }
+
+  // &--main {
+  //   color: #fff;
+  //   background-color: $color-main;
+  //   // border: 1px solid $color-main;
+
+  //   &:focus,
+  //   &:hover {
+  //     color: #fff;
+  //     background-color: darken($color-main, 10%);
+  //     // border-color: darken($color-main, 12%);
+  //   }
+
+  //   &--disabled,
+  //   &:disabled {
+  //     color: #fff;
+  //     background-color: $color-main;
+  //     // border-color: $color-main;
+  //   }
+  // }
+}

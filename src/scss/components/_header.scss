@@ -1,0 +1,157 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: $gray-darker;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $gray-darker;
+    z-index: 2;
+  }
+
+  &__container {
+    position: relative;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    flex: 0 0 100px;
+    position: relative;
+    z-index: 3;
+    margin-right: 20px;
+
+    @media (max-width: 767px) {
+      flex: 0 0 70px;
+    }
+  }
+}
+
+.nav {
+  &__list {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: $white;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+
+    &--active {
+      color: $white;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $color-tw;
+      }
+    }
+
+  }
+
+  @media (max-width: 767px) {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0 0 20px;
+    background-color: $gray-darken;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    overflow-y: auto;
+    transition: top 0.5s ease-in-out;
+  }
+}
+
+.nav--active {
+  visibility: visible;
+  opacity: 1;
+  top: 0;
+  transition: top 0.5s ease-in-out;
+}
+
+.burger-btn {
+  display: none;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  z-index: 3;
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $white;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  &__line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    left: 0;
+    background-color: $white;
+  }
+
+  &--active {
+    &::before {
+      top: 50%;
+      transform: rotate(45deg);
+      transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+    }
+
+    &::after {
+      top: 50%;
+      transform: rotate(-45deg);
+      transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+    }
+
+    .burger-btn__line {
+      transform: scale(0);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}

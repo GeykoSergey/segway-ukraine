@@ -1,0 +1,26 @@
+.video-presentation {
+
+	// .video-presentation__container
+
+	&__container {
+	}
+
+	// .video-presentation__content
+
+	&__content {
+		position: relative;
+		padding-bottom: 57%;
+	}
+
+	// .video-presentation__video
+
+	&__video {
+		object-fit: cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+	}
+}

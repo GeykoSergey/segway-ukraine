@@ -1,0 +1,53 @@
+.hero {
+    padding-bottom: 50px;
+    background-color: $gray-lightest;
+
+    // .hero__container
+
+    &__container {
+      display: flex;
+    //   flex-wrap: wrap;
+    }
+
+    // .hero__content
+
+    &__content {
+      flex: 0 1 64%;
+    }
+
+    // .hero__title
+
+    &__title {
+      margin: 0;
+      margin-bottom: 50px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      // color:$gray-darken;
+    }
+
+    // .hero__title-text
+
+    &__title-text {
+      display: block;
+      // max-width: 90%;
+      font-weight: 400;
+      line-height: 1.4;
+      text-transform: initial;
+      margin-bottom: 50px;
+    }
+
+    // .hero__link
+
+    &__link {
+    }
+
+    &__img {
+      flex: 0 0 auto;
+    }
+  }
+  .container {
+  }
+  .btn {
+  }

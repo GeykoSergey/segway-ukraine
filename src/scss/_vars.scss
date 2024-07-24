@@ -1,0 +1,64 @@
+$font-family: "Muller", sans-serif;
+
+// tpl
+$gray-darker: hsl(0deg, 0%, 20%);
+$gray-darken: hsl(0deg, 0%, 30%);
+$white: hsl(0deg, 0%, 100%);
+$color-tw: #40a2f5;
+
+// ===
+$light-color: #fff;
+$content-width: 1600px;
+$container-offset: 15px;
+$container-width: calc(var($content-width) + (var($container-offset) * 2));
+$container-padding: 20px;
+$container-width: 1440px;
+
+// ===
+$black: hsl(0deg, 0%, 0%);
+$gray-darkest: hsl(0deg, 0%, 10%);
+$gray-darker: hsl(0deg, 0%, 20%);
+$gray-darken: hsl(0deg, 0%, 30%);
+$gray-dark: hsl(0deg, 0%, 40%);
+$gray: hsl(0deg, 0%, 50%);
+$gray-light: hsl(0deg, 0%, 60%);
+$gray-lighten: hsl(0deg, 0%, 70%);
+$gray-lighter: hsl(0deg, 0%, 80%);
+$gray-lightest: hsl(0deg, 0%, 90%);
+$white: hsl(0deg, 0%, 100%);
+
+// ===
+$color-main: hsl(208deg, 98%, 43%);
+$color-success: hsl(120deg, 39%, 54%);
+$color-danger: hsl(2deg, 64%, 58%);
+$color-warning: hsl(35deg, 84%, 62%);
+
+// ===
+$color-fb: #4267b2;
+$color-tw: #40a2f5;
+$color-gh: #24292e;
+
+// ===
+$text-color: $gray-darkest;
+$text-color-muted: $gray;
+$body-bg: $white;
+
+// ===
+$link-color: $color-main;
+$link-color--hover: hsl(208deg, 98%, 20%);
+
+// ===
+$border-color: $gray-lighten;
+
+// ===
+$border-radius: 3px;
+$opacity: 0.7;
+$transition-time: 0.3s;
+$shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.3);
+
+// ===
+$field-padding-vertical: 5px;
+$field-padding-horizontal: 12px;
+
+// ===
+$line-height: 1.5;
