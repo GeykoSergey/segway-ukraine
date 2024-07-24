@@ -6,7 +6,7 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="theme-color" content="#111111" />
-  <title>Sea Doo</title>
+  <title>SegWay</title>
   <link
     rel="preload"
     href="fonts/MullerRegular.woff2"
@@ -16,12 +16,13 @@
   />
   <link rel="stylesheet" href="css/vendor.css" />
   <link rel="stylesheet" href="css/main.css" />
+  <script defer src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
   <script defer src="js/main.js"></script>
 </head>
 
   <body class="page__body">
     <div class="site-container">
-      <header class="header fixed-block">
+      <header class="header fixed-block" data-scroll-header>
   <div class="container">
     <div class="header__container">
       <a href="#" class="logo header__logo">
@@ -35,7 +36,7 @@
       <nav class="nav header__nav" title="Main menu" data-menu>
         <ul class="list-reset nav__list" role="menu" id="menu-list">
           <li class="nav__item"  data-menu-item role="menuitem">
-            <a href="#!" class="nav__link">Item</a>
+            <a href="#video-presentation" class="nav__link">Item</a>
           </li>
           <li class="nav__item"  data-menu-item role="menuitem">
             <li class="nav__item"  data-menu-item >
@@ -67,20 +68,7 @@
 </header>
 
       <main class="main">
-
-      <section class="video-presentation">
-  <div class="container">
-       <div class="video-presentation__container">
-        <h2 class="title section-title">
-            Відео презентація продукту
-        </h2>
-        <div class="video-presentation__content">
-            <iframe class="video-presentation__video" src="https://www.youtube.com/embed/Vq0JCR6_YpA" title="YouTube videplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscopepicture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
-  </div>
-</section>
-      <section class="hero">
+        <section class="hero">
   <div class="container">
       <div class="hero__container">
     <div class="hero__content">
@@ -101,9 +89,375 @@
 
 </section>
 
+      <section class="video-presentation" id="video-presentation">
+  <div class="container">
+       <div class="video-presentation__container">
+        <h2 class="title section-title">
+            Відео презентація продукту
+        </h2>
+        <div class="video-presentation__content">
+            <iframe class="video-presentation__video" src="https://www.youtube.com/embed/Vq0JCR6_YpA" title="YouTube videplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscopepicture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+  </div>
+</section>
+
+      <section class="product" id="product">
+  <div class="container">
+
+    <div class="product__container">
+          <h3 class="product__title section-title">
+            SEGWAY Ninebot Kickscooter MAX
+          </h3>
+
+        <!-- Оболочка слайдера -->
+        <div class="product__slider swiper">
+            <!-- Двигающееся часть слайдера -->
+            <div class="product__wrapper swiper-wrapper">
+                <!-- Слайд -->
+                <div class="product__slide swiper-slide">
+                    <div class="product__item">
+                        <div class="product__content content-product">
+                              <div class="content-product__title">
+                                Smart battery Management system (Smart-BMS)
+                              </div>
+                              <div class="content-product__text">
+                                The Smart-BMS closely monitors the battery status with multiple protection mechanisms to ensure the battery durability
+                              </div>
+                        </div>
+                        <div class="product__img">
+                              <img src="../img/product/slider-img-big-1.png" alt="" class="product__img">
+                        </div>
+                      </div>
+                </div>
+                <!-- Слайд -->
+                <div class="product__slide swiper-slide">
+                    <div class="product__item">
+                        <div class="product__content content-product">
+                              <div class="content-product__title">
+                                Smart battery Management system (Smart-BMS)
+                              </div>
+                              <div class="content-product__text">
+                                The Smart-BMS closely monitors the battery status with multiple protection mechanisms to ensure the battery durability
+                              </div>
+                            </div>
+                        <div class="product__img">
+                              <img src="../img/product/slider-img-big-2.png" alt="" class="product__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Если нужна пагинация -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <!-- Если нужна навигация (влево/вправо) -->
+            <!-- <button type="button" class="swiper-button-prev"></button> -->
+            <!-- <button type="button" class="swiper-button-next"></button> -->
+            <!-- Если нужен скролбар -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+
+      <!-- <div class="swiper product__slider">
+		<div class="swiper-wrapper">
+
+		  <div class="swiper-slide">
+			<div class="product__item">
+			  <div class="product__content content-product">
+				<div class="content-product__title">
+				  Smart battery Management system (Smart-BMS)
+				</div>
+				<div class="content-product__text">
+				  The Smart-BMS closely monitors the battery status with multiple protection mechanisms to ensure the battery durability
+				</div>
+			  </div>
+			  <div class="product__img">
+				<img src="../img/slider-img-big-1.png" alt="" class="product__img">
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="swiper-slide">
+			<div class="product__item">
+			  <div class="product__content content-product">
+				<div class="content-product__title">
+				  Smart battery Management system (Smart-BMS)
+				</div>
+				<div class="content-product__text">
+				  The Smart-BMS closely monitors the battery status with multiple protection mechanisms to ensure the battery durability
+				</div>
+			  </div>
+			  <div class="product__img">
+				<img src="../img/slider-img-big-2.png" alt="" class="product__img">
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="swiper-slide">
+			<div class="product__item">
+			  <div class="product__content content-product">
+				<div class="content-product__title">
+				  Smart battery Management system (Smart-BMS)
+				</div>
+				<div class="content-product__text">
+				  The Smart-BMS closely monitors the battery status with multiple protection mechanisms to ensure the battery durability
+				</div>
+			  </div>
+			  <div class="product__img">
+				<img src="../img/slider-img-big-3.png" alt="" class="product__img">
+			  </div>
+			</div>
+		  </div>
+
+		</div>
+	  </div> -->
+
+        <!-- <div class="container-fluid">
+		<div class="product__nav">
+			<div class="swiper-scrollbar product__scroll"></div>
+			<div class="product__btns">
+			<button class="btn-reset product__slider-btn product__slider-btn--prev" aria-label="Перейти к предыдущему слайду"></button>
+			<button class="btn-reset product__slider-btn product__slider-btn--next" aria-label="Перейти к следующему слайду"></button>
+			</div>
+		</div>
+		</div> -->
+    </div>
+</div>
+</section>
+      <section class="accessories">
+  <div class="container">
+        <div class="accessories__container">
+        <h2 class="title section-title">Аксесуари</h2>
+        <ul class="list-reset accessories__list">
+            <li class="accessories__item">
+                <div class="accessories__inner">
+                    <div class="accessories__img-wrapper">
+                        <img class="accessories__img" src="img/accessories/accessories-1.jpg" alt="">
+                    </div>
+                    <h4 class="accessories__title">
+                        Ninebot динамік двигуна
+                    </h4>
+                    <p class="accessories__description">
+                        Вбудована система імітації звуку двигуна може імітувати реалістичний рев двигуна на основі акселератора, гальма, швидкості та інших сигналів автомобіля
+                    </p>
+                    <span class="accessories__price">
+                        $149.99
+                    </span>
+                    <button class="button">
+                        Додати у кошик
+                    </button>
+                </div>
+            </li>
+            <li class="accessories__item">
+                <div class="accessories__inner">
+                    <div class="accessories__img-wrapper">
+                        <img class="accessories__img" src="img/accessories/accessories-2.jpg" alt="">
+                    </div>
+                    <h4 class="accessories__title">
+                        Ninebot динамік двигуна
+                    </h4>
+                    <p class="accessories__description">
+                        Вбудована система імітації звуку двигуна може імітувати реалістичний рев двигуна на основі акселератора, гальма, швидкості та інших сигналів автомобіля
+                    </p>
+                    <span class="accessories__price">
+                        $149.99
+                    </span>
+                    <button class="button">
+                        Додати у кошик
+                    </button>
+                </div>
+            </li>
+            <li class="accessories__item">
+                <div class="accessories__inner">
+                    <div class="accessories__img-wrapper">
+                        <img class="accessories__img" src="img/accessories/accessories-3.jpg" alt="">
+                    </div>
+                    <h4 class="accessories__title">
+                        Ninebot динамік двигуна
+                    </h4>
+                    <p class="accessories__description">
+                        Вбудована система імітації звуку двигуна може імітувати реалістичний рев двигуна на основі акселератора, гальма, швидкості та інших сигналів автомобіля
+                    </p>
+                    <span class="accessories__price">
+                        $149.99
+                    </span>
+                    <button class="button">
+                        Додати у кошик
+                    </button>
+                </div>
+            </li>
+            <li class="accessories__item">
+                <div class="accessories__inner">
+                    <div class="accessories__img-wrapper">
+                        <img class="accessories__img" src="img/accessories/accessories-4.jpg" alt="">
+                    </div>
+                    <h4 class="accessories__title">
+                        Ninebot динамік двигуна
+                    </h4>
+                    <p class="accessories__description">
+                        Вбудована система імітації звуку двигуна може імітувати реалістичний рев двигуна на основі акселератора, гальма, швидкості та інших сигналів автомобіля
+                    </p>
+                    <span class="accessories__price">
+                        $149.99
+                    </span>
+                    <button class="button">
+                        Додати у кошик
+                    </button>
+                </div>
+            </li>
+            <li class="accessories__item">
+                <div class="accessories__inner">
+                    <div class="accessories__img-wrapper">
+                        <img class="accessories__img" src="img/accessories/accessories-5.jpg" alt="">
+                    </div>
+                    <h4 class="accessories__title">
+                        Ninebot динамік двигуна
+                    </h4>
+                    <p class="accessories__description">
+                        Вбудована система імітації звуку двигуна може імітувати реалістичний рев двигуна на основі акселератора, гальма, швидкості та інших сигналів автомобіля
+                    </p>
+                    <span class="accessories__price">
+                        $149.99
+                    </span>
+                    <button class="button">
+                        Додати у кошик
+                    </button>
+                </div>
+            </li>
+            <li class="accessories__item">
+                <div class="accessories__inner">
+                    <div class="accessories__img-wrapper">
+                        <img class="accessories__img" src="img/accessories/accessories-6.jpg" alt="">
+                    </div>
+                    <h4 class="accessories__title">
+                        Ninebot динамік двигуна
+                    </h4>
+                    <p class="accessories__description">
+                        Вбудована система імітації звуку двигуна може імітувати реалістичний рев двигуна на основі акселератора, гальма, швидкості та інших сигналів автомобіля
+                    </p>
+                    <span class="accessories__price">
+                        $149.99
+                    </span>
+                    <button class="button">
+                        Додати у кошик
+                    </button>
+                </div>
+            </li>
+            <li class="accessories__item">
+                <div class="accessories__inner">
+                    <div class="accessories__img-wrapper">
+                        <img class="accessories__img" src="img/accessories/accessories-7.jpg" alt="">
+                    </div>
+                    <h4 class="accessories__title">
+                        Ninebot динамік двигуна
+                    </h4>
+                    <p class="accessories__description">
+                        Вбудована система імітації звуку двигуна може імітувати реалістичний рев двигуна на основі акселератора, гальма, швидкості та інших сигналів автомобіля
+                    </p>
+                    <span class="accessories__price">
+                        $149.99
+                    </span>
+                    <button class="button">
+                        Додати у кошик
+                    </button>
+                </div>
+            </li>
+            <li class="accessories__item">
+                <div class="accessories__inner">
+                    <div class="accessories__img-wrapper">
+                        <img class="accessories__img" src="img/accessories/accessories-8.jpg" alt="">
+                    </div>
+                    <h4 class="accessories__title">
+                        Ninebot динамік двигуна
+                    </h4>
+                    <p class="accessories__description">
+                        Вбудована система імітації звуку двигуна може імітувати реалістичний рев двигуна на основі акселератора, гальма, швидкості та інших сигналів автомобіля
+                    </p>
+                    <span class="accessories__price">
+                        $149.99
+                    </span>
+                    <button class="button">
+                        Додати у кошик
+                    </button>
+                </div>
+            </li>
+            <li class="accessories__item">
+                <div class="accessories__inner">
+                    <div class="accessories__img-wrapper">
+                        <img class="accessories__img" src="img/accessories/accessories-9.jpg" alt="">
+                    </div>
+                    <h4 class="accessories__title">
+                        Ninebot динамік двигуна
+                    </h4>
+                    <p class="accessories__description">
+                        Вбудована система імітації звуку двигуна може імітувати реалістичний рев двигуна на основі акселератора, гальма, швидкості та інших сигналів автомобіля
+                    </p>
+                    <span class="accessories__price">
+                        $149.99
+                    </span>
+                    <button class="button">
+                        Додати у кошик
+                    </button>
+                </div>
+            </li>
+        </ul>
+        <div class="accessories__show-more">
+            <button class="button show-more__button">
+                Показати ще
+            </button>
+        </div>
+
+    </div>
+  </div>
+
+</section>
+
+      <section data-watch="navigator" class="order">
+  <div class="container">
+        order
+    <div class="order__container">
+
+      <div class="order__left">
+        <h2 class="order__title">
+          Buy SEGWAY Ninebot Kickscooter MAX with 10% discount
+        </h2>
+        <p class="order__descr">
+          Акция действительна до 10 марта 2023 года
+        </p>
+      </div>
+      <div class="order__right">
+        <form action="#" class="form order__form">
+          <label class="form__label">
+            <input type="text" name="Имя" class="input-reset form__input" placeholder="Имя">
+          </label>
+          <label class="form__label">
+            <input type="tel" name="Телефон" class="input-reset form__input" placeholder="Телефон">
+          </label>
+          <label class="form__label">
+            <input type="email" name="E-mail" class="input-reset form__input" placeholder="E-mail">
+          </label>
+          <button class="btn-reset button form__btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  </section>
+
       </main>
       <footer class="footer">
-  <div class="container">Footer</div>
+  <div class="container">
+    <div class="footer__container-big">
+      <a href="#" class="logo footer__logo">
+        <img src="../img/logo.svg" class="image" alt="Логотип компании">
+      </a>
+      <a href="tel:+380100100100" class="footer__phone phone">+38 0100 100 100</a>
+      <div class="footer__address">
+        2637 Fairfax Ave Culver City, CA 90232
+      </div>
+      <div class="footer__copyright">
+        Segway California © 2017
+      </div>
+    </div>
+  </div>
 </footer>
 
     </div>

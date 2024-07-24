@@ -12,10 +12,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_burger_menu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/burger-menu.js */ "./src/js/components/burger-menu.js");
 /* harmony import */ var _components_ex_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/ex.js */ "./src/js/components/ex.js");
 /* harmony import */ var _components_slider_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/slider.js */ "./src/js/components/slider.js");
+/* harmony import */ var _components_smooth_scroll_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/smooth-scroll.js */ "./src/js/components/smooth-scroll.js");
 // ========================================================
 //                         CONTROL
 // ========================================================
 // import "./components/header-height.js";
+
 
 
 
@@ -178,6 +180,21 @@ __webpack_require__.r(__webpack_exports__);
 swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination]);
 const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper', {
   slidesPerView: 'auto'
+});
+
+/***/ }),
+
+/***/ "./src/js/components/smooth-scroll.js":
+/*!********************************************!*\
+  !*** ./src/js/components/smooth-scroll.js ***!
+  \********************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+var scroll = new SmoothScroll('a[href*="#"]', {
+  header: '[data-scroll-header]',
+  easing: 'Linear',
+  speed: 300
 });
 
 /***/ }),

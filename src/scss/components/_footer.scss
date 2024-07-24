@@ -1,0 +1,31 @@
+.footer {
+  background-color: $gray-darker;
+
+	&__container-big {
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo {
+		img {
+			width: 100%;
+		}
+	}
+
+	&__phone {
+		margin-left: auto;
+	}
+
+	&__address {
+
+	}
+
+	&__copyright {
+	}
+}
+.logo {
+}
+.image {
+}
+.phone {
+}

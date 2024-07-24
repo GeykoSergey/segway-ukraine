@@ -5,4 +5,5 @@
 import "./components/burger-menu.js";
 import "./components/ex.js";
 import "./components/slider.js";
+import "./components/smooth-scroll.js";
 
