@@ -1,0 +1,61 @@
+// ==================  Стили для стандартного Select ==================
+// у тега select непосредственно мы не можем использовать before и after
+// поэтому для того что бы создать стрелку создадим div standart-select__body
+// и положим внутрь его select
+.standart-select {
+  &__body {
+    position: relative;
+
+    // кастомная стрелка
+    // Стрелка before расположена над select и перекрывает его
+    // снимаем клик со стрелки
+    // делает элемент (стрелку) как будто прозрачным для клика
+    &::after {
+      content: "";
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      display: block;
+      width: 32px;
+      height: 32px;
+      background-image: url("../img/tpl/icons/arrow-drop-down.svg");
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    margin-bottom: 8px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &__select {
+    // убираем браузерную стрелку
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #81d4fa;
+    border-radius: 4px;
+    padding: 12px 44px 12px 12px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.2;
+    background-color: #fff;
+    cursor: pointer;
+
+    &:focus {
+      outline: 0;
+      box-shadow: 0 0 0 1px rgba(5, 135, 241, 0.464) inset;
+    }
+  }
+}
+
+// убираем стрелку в ie10, ie11
+.standart-select__select::-ms-expand {
+  display: none;
+}

@@ -1,0 +1,30 @@
+.cocials-media {
+  padding: 24px 0;
+  background-color: #161e21;
+}
+.cocials-media__description {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 24px;
+  color: #fff;
+}
+.cocials-media__list > :not(:last-child) {
+  margin-right: 12px;
+}
+.cocials-media__item {
+  display: inline-block;
+}
+.icon-svg {
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  fill: #fff;
+  -webkit-transition: fill 0.3s ease-in-out;
+  transition: fill 0.3s ease-in-out;
+}
+@media (any-hover: hover) {
+  .icon-svg:hover {
+    fill: #fff30a;
+  }
+}/*# sourceMappingURL=socials.css.map */

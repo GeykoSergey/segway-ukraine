@@ -1,0 +1,70 @@
+.contacts {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.contacts-link {
+  padding-left: 53px;
+  background-position: left center;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+
+  &--call {
+    background-image: url("../img/svg/call.svg");
+  }
+
+  &--mail {
+    background-image: url("../img/svg/mail.svg");
+  }
+
+  &__caption {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--color-text-gray);
+  }
+
+  &__value {
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--color-text-gray);
+    transition: color 0.3s ease-in-out;
+  }
+}
+
+.address {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  &__text {
+    line-height: 1;
+  }
+
+  // у каждого элемента .header-address устанавливаем margin-right: 15px;
+  // у последнего обнуляем
+  & > * {
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+&__phone {
+  & > * {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+      white-space: nowrap;
+    }
+  }
+}

@@ -1,0 +1,291 @@
+<div class="filter-overlay">
+  <div class="filter catalog-filter">
+    <div class="filter__wrapper">
+      <header class="filter__header">
+        <h3 class="filter__title">Підбір за параметрами</h3>
+        <button class="btn-reset filter-mobile__btn-close"></button>
+      </header>
+      <form action="#!" class="filter__form form-filter">
+        <fieldset class="form-filter__fieldset">
+          <legend class="form-filter__legend">
+            Тільки у наявності
+          </legend>
+          <div class="custom-checkbox-toggle">
+            <input
+              class="tgl tgl-light"
+              id="instock"
+              type="checkbox"
+              checked
+            />
+            <label class="tgl-btn" for="instock"></label>
+          </div>
+        </fieldset>
+        <fieldset class="form-filter__fieldset">
+          <legend
+            class="form-filter__legend"
+            data-name="filter-legend"
+          >
+            Категорії товару
+          </legend>
+          <ul class="list-reset form-filter__list">
+            <li class="form-filter__item">
+              <div class="custom-checkbox">
+                <input
+                  class="custom-checkbox__input"
+                  id="triathlon"
+                  type="checkbox"
+                />
+                <label for="triathlon" class="custom-checkbox__label"
+                  >Велосипеди для тріатлону</label
+                >
+              </div>
+            </li>
+            <li class="form-filter__item">
+              <div class="custom-checkbox">
+                <input
+                  class="custom-checkbox__input"
+                  id="mountain"
+                  type="checkbox"
+                  checked
+                />
+                <label for="mountain" class="custom-checkbox__label"
+                  >Гірські велосипеди</label
+                >
+              </div>
+            </li>
+            <li class="form-filter__item">
+              <div class="custom-checkbox">
+                <input
+                  class="custom-checkbox__input"
+                  id="urban"
+                  type="checkbox"
+                />
+                <label for="urban" class="custom-checkbox__label"
+                  >Міські велосипеди</label
+                >
+              </div>
+            </li>
+            <li class="form-filter__item">
+              <div class="custom-checkbox">
+                <input
+                  class="custom-checkbox__input"
+                  id="gravel"
+                  type="checkbox"
+                />
+                <label for="gravel" class="custom-checkbox__label"
+                  >Гравійні велосипеди</label
+                >
+              </div>
+            </li>
+            <li class="form-filter__item">
+              <div class="custom-checkbox">
+                <input
+                  class="custom-checkbox__input"
+                  id="double-hung"
+                  type="checkbox"
+                />
+                <label
+                  for="double-hung"
+                  class="custom-checkbox__label"
+                  >Двопідвісні велосипеди</label
+                >
+              </div>
+            </li>
+          </ul>
+          <button
+            type="submit"
+            class="btn-reset form-filter__more-btn"
+          >
+            Показати ще
+          </button>
+        </fieldset>
+        <fieldset class="form-filter__fieldset">
+          <legend
+            class="form-filter__legend"
+            data-name="filter-legend"
+          >
+            Ціна
+          </legend>
+          <div class="custom__input-range">
+            <div class="range-slider" id="slider"></div>
+            <div class="range-slider__input-wrapper">
+              <label class="range-slider__label">
+                <span class="range-slider__text">від</span>
+                <input
+                  type="number"
+                  class="range-slider__input"
+                  min="500"
+                  max="10000"
+                  placeholder="500"
+                  id="input-0"
+                />
+                <span class="range-slider__text">₴</span>
+              </label>
+              <label class="range-slider__label">
+                <span class="range-slider__text">до</span>
+                <input
+                  type="number"
+                  class="range-slider__input"
+                  min="500"
+                  max="10000"
+                  placeholder="10000"
+                  id="input-1"
+                />
+                <span class="range-slider__text">₴</span>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="form-filter__fieldset">
+          <legend
+            class="form-filter__legend"
+            data-name="filter-legend"
+          >
+            Бренд
+          </legend>
+          <div class="form-filter__list-wrapper">
+            <ul class="list-reset form-filter__list">
+              <li class="form-filter__item">
+                <div class="custom-checkbox">
+                  <input
+                    class="custom-checkbox__input"
+                    id="bianci"
+                    type="checkbox"
+                  />
+                  <label for="bianci" class="custom-checkbox__label">
+                    Bianci
+                    <span class="form-filter__amount">(24)</span>
+                  </label>
+                </div>
+              </li>
+              <li class="form-filter__item">
+                <div class="custom-checkbox">
+                  <input
+                    class="custom-checkbox__input"
+                    id="bmc"
+                    type="checkbox"
+                    checked
+                  />
+                  <label for="bmc" class="custom-checkbox__label">
+                    BMC
+                    <span class="form-filter__amount">(118)</span>
+                  </label>
+                </div>
+              </li>
+              <li class="form-filter__item">
+                <div class="custom-checkbox">
+                  <input
+                    class="custom-checkbox__input"
+                    id="ciclistino"
+                    type="checkbox"
+                  />
+                  <label
+                    for="ciclistino"
+                    class="custom-checkbox__label"
+                  >
+                    Ciclistino
+                    <span class="form-filter__amount">(2)</span>
+                  </label>
+                </div>
+              </li>
+              <li class="form-filter__item">
+                <div class="custom-checkbox">
+                  <input
+                    class="custom-checkbox__input"
+                    id="cipollini"
+                    type="checkbox"
+                  />
+                  <label
+                    for="cipollini"
+                    class="custom-checkbox__label"
+                  >
+                    Cipollini
+                    <span class="form-filter__amount">(38)</span>
+                  </label>
+                </div>
+              </li>
+              <li class="form-filter__item">
+                <div class="custom-checkbox">
+                  <input
+                    class="custom-checkbox__input"
+                    id="colnago"
+                    type="checkbox"
+                  />
+                  <label for="colnago" class="custom-checkbox__label">
+                    Colnago
+                    <span class="form-filter__amount">(19)</span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+            <button
+              type="submit"
+              class="btn-reset form-filter__more-btn"
+            >
+              Показати ще
+            </button>
+          </div>
+        </fieldset>
+        <fieldset class="form-filter__fieldset">
+          <legend
+            class="form-filter__legend"
+            data-name="filter-legend"
+          >
+            Матеріал рами
+          </legend>
+          <div class="form-filter__list-wrapper">
+            <ul class="list-reset form-filter__list">
+              <li class="form-filter__item">
+                <div class="custom-checkbox">
+                  <input
+                    class="custom-checkbox__input"
+                    id="aluminum"
+                    type="checkbox"
+                  />
+                  <label
+                    for="aluminum"
+                    class="custom-checkbox__label"
+                  >
+                    Алюміній
+                    <span class="form-filter__amount">(55)</span>
+                  </label>
+                </div>
+              </li>
+              <li class="form-filter__item">
+                <div class="custom-checkbox">
+                  <input
+                    class="custom-checkbox__input"
+                    id="carbon"
+                    type="checkbox"
+                    checked
+                  />
+                  <label for="carbon" class="custom-checkbox__label">
+                    Карбон
+                    <span class="form-filter__amount">(74)</span>
+                  </label>
+                </div>
+              </li>
+              <li class="form-filter__item">
+                <div class="custom-checkbox">
+                  <input
+                    class="custom-checkbox__input"
+                    id="steel"
+                    type="checkbox"
+                  />
+                  <label for="steel" class="custom-checkbox__label">
+                    Сталь
+                    <span class="form-filter__amount">(2)</span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <button type="reset">Reset</button>
+      </form>
+      <footer class="filter__footer">
+        <button class="btn-reset filter-mobile__btn-close"></button>
+      </footer>
+    </div>
+  </div>
+</div>

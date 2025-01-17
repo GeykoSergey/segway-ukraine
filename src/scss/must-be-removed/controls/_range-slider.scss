@@ -1,0 +1,60 @@
+.range-slider {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0 12px;
+
+  &__input-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    border: 1px solid #cfd8dc;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #fff;
+  }
+
+  &__text {
+  }
+
+  &__input {
+    width: 50px;
+    padding: 5px;
+    border: none;
+    outline: none;
+  }
+}
+
+.noUi-connect {
+  background-color: #101010;
+}
+
+.noUi-target {
+  background-color: #cbc8c8;
+  border: none;
+  box-shadow: none;
+  height: 6px;
+}
+
+.noUi-handle::before,
+.noUi-handle::after {
+  display: none;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 24px;
+  height: 24px;
+  right: -12px;
+  top: -9px;
+}
+
+.noUi-handle {
+  border: 5px solid #101010;
+  border-radius: 100%;
+  background: #fff;
+  cursor: default;
+  box-shadow: none;
+}

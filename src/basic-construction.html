@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html')
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header.html')
+      <main class="main">
+        <!-- ****************************************************** -->
+        <!-- Containers -->
+        <!-- ****************************************************** -->
+        <div class="container">
+          <h1 class="section-title">Containers</h1>
+        </div>
+        <section>
+          <div class="container">
+            <p>Стандартный контейнер <code>.container</code></p>
+            <div class="content-demo">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reprehenderit obcaecati, nesciunt, nam illum nemo, quod hic
+                tenetur velit quae animi tempore error at. Cumque, nisi.
+                Laudantium deserunt quis vitae voluptas?
+              </p>
+            </div>
+          </div>
+
+          <div class="container-full">
+            <p>Контейнер на всю ширину<code>.container-full</code></p>
+            <div class="content-demo">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reprehenderit obcaecati, nesciunt, nam illum nemo, quod hic
+                tenetur velit quae animi tempore error at. Cumque, nisi.
+                Laudantium deserunt quis vitae voluptas?
+              </p>
+            </div>
+          </div>
+
+          <div class="container-left-50">
+            <p>Контейнер слева на 50%<code>.container-left-50</code></p>
+            <div class="content-demo">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reprehenderit obcaecati, nesciunt, nam illum nemo, quod hic
+                tenetur velit quae animi tempore error at. Cumque, nisi.
+                Laudantium deserunt quis vitae voluptas?
+              </p>
+            </div>
+          </div>
+
+          <div class="container-right-50">
+            <p>Контейнер справа на 50%<code>.container-right-50</code></p>
+            <div class="content-demo">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reprehenderit obcaecati, nesciunt, nam illum nemo, quod hic
+                tenetur velit quae animi tempore error at. Cumque, nisi.
+                Laudantium deserunt quis vitae voluptas?
+              </p>
+            </div>
+          </div>
+
+          <div class="container-left">
+            <p>
+              Контейнер слева до размера контейнера
+              <code>.container-left</code>
+            </p>
+            <div class="content-demo">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reprehenderit obcaecati, nesciunt, nam illum nemo, quod hic
+                tenetur velit quae animi tempore error at. Cumque, nisi.
+                Laudantium deserunt quis vitae voluptas?
+              </p>
+            </div>
+          </div>
+
+          <div class="container-right">
+            <p>Контейнер вправо<code>.container-right</code></p>
+            <div class="content-demo">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reprehenderit obcaecati, nesciunt, nam illum nemo, quod hic
+                tenetur velit quae animi tempore error at. Cumque, nisi.
+                Laudantium deserunt quis vitae voluptas?
+              </p>
+            </div>
+          </div>
+
+          <div class="container-half-left">
+            <p>Контейнер на половину слева <code>.container-half-left</code></p>
+            <div class="content-demo">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reprehenderit obcaecati, nesciunt, nam illum nemo, quod hic
+                tenetur velit quae animi tempore error at. Cumque, nisi.
+                Laudantium deserunt quis vitae voluptas?
+              </p>
+            </div>
+          </div>
+
+          <div class="container-half-right">
+            <p>
+              Контейнер на половину справа <code>.container-half-right</code>
+            </p>
+            <div class="content-demo">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reprehenderit obcaecati, nesciunt, nam illum nemo, quod hic
+                tenetur velit quae animi tempore error at. Cumque, nisi.
+                Laudantium deserunt quis vitae voluptas?
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- ****************************************************** -->
+        <!-- Images -->
+        <!-- ****************************************************** -->
+        <div class="container">
+          <h1 class="section-title">Image</h1>
+          <div class="img-wrap">
+            <img class="cover-pic" src="../img/tpl/01-big.jpg" alt="image" />
+          </div>
+          <div class="img-wrap">
+            <img class="contain-pic" src="../img/tpl/01-big.jpg" alt="image" />
+          </div>
+          <picture>
+            <source srcset=".webp" type="image/webp" />
+            <img
+              loading="lazy"
+              src="."
+              class="image"
+              width=""
+              height=""
+              alt=""
+            />
+          </picture>
+          <img loading="lazy" src="." class="image" width="" height="" alt="" />
+          <svg class="">
+            <use xlink:href="img/sprite.svg#"></use>
+          </svg>
+        </div>
+
+        <!-- ****************************************************** -->
+        <!--  -->
+        <!-- ****************************************************** -->
+        <div class="container"><h1 class="section-title">Flex</h1></div>
+        <div class="container"><h1 class="section-title">Grid</h1></div>
+        <!-- ****************************************************** -->
+        <!-- Card -->
+        <!-- ****************************************************** -->
+        <div class="container profile-card__container">
+          <h1 class="section-title">Profile Card</h1>
+          <div class="profile-card">
+            <div class="profile-card__img">
+              <img src="../img/tpl/01-big.jpg" />
+            </div>
+          </div>
+        </div>
+        <div class="container"></div>
+      </main>
+    </div>
+  </body>
+</html>

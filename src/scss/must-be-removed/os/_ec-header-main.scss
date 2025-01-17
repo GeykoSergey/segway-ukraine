@@ -1,0 +1,77 @@
+.header-main {
+  position: relative;
+  z-index: 3;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.open-catalog-btn {
+}
+
+// ============== user-dashboard =============
+
+.user-dashboard {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.user-btn {
+  border: 1px solid transparent;
+}
+
+.user-btn:not(:last-child){
+  margin-right: 10px;
+}
+
+.user-btn:hover {
+  border: 1px solid var(--color-text-gray);
+}
+
+.user-profile-btn {
+}
+
+.user-compare-btn {
+}
+.user-wishlist-btn {
+}
+.user-cart-btn {
+}
+
+.user {
+  &__img {
+    position: relative;
+    width: 24px;
+    height: 24px;
+
+    &--profile::before {
+      background-image: url('../../img/svg/icon/person.svg');
+    }
+
+    &--compare::before {
+      background-image: url('../../img/svg/icon/balance.svg');
+    }
+
+    &--wishlist::before {
+      background-image: url('../../img/svg/icon/favorite.svg');
+    }
+    
+    &--cart::before {
+      background-image: url('../../img/svg/icon/shopping-cart.svg');
+    }
+  }
+
+  &__img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

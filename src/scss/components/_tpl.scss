@@ -1,0 +1,42 @@
+@media (hover: hover) {
+  .form-filter__more-btn:hover,
+  .form-filter__item:hover {
+    color: var(--color-text-dark);
+    text-shadow: 0 0 0 1px var(--color-text-dark);
+  }
+}
+
+@media (hover: none) {
+  .form-filter__more-btn:active,
+  .form-filter__item:active {
+    color: var(--color-text-dark);
+    text-shadow: 0 0 0 1px var(--color-text-dark);
+  }
+}
+
+@media (max-width: 767px) {
+  .filter-btn {
+    display: inline-block;
+  }
+}
+
+// transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+
+&__phones {
+  & > * {
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+.text {
+  white-space: nowrap;
+  user-select: none;
+
+  flex: 0 0 270px;
+  width: 270px;
+}
+
+// > - у ближайшего соседа

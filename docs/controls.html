@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <meta name="mobile-web-app-capable" content="yes"> -->
+  <!-- <meta name="theme-color" content="Canvas"> -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>SegWay</title>
+  <link
+    rel="preload"
+    href="fonts/MullerRegular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=owl" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"
+  ></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <div class="site-container">
+      <header class="header fixed-block" data-scroll-header>
+  <div class="container">
+    <div class="header__container">
+      <a href="/" class="logo header__logo">
+        <img
+          loading="lazy"
+          src="../img/tpl/star_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg"
+          class="img logo__image"
+          alt="Brand"
+        />
+      </a>
+      <nav class="nav header__nav" title="Main menu" data-menu>
+        <ul class="list-reset nav__list" role="menu" id="menu-list">
+          <li class="nav__item" data-menu-item role="menuitem">
+            <a href="http://localhost:3000/online-store.html" class="nav__link"
+              >Online store</a
+            >
+          <li class="nav__item" data-menu-item role="menuitem">
+            <a
+              href="http://localhost:3000/basic-construction.html"
+              class="nav__link"
+              >Basic constructions</a
+            >
+          </li>
+          <li class="nav__item" data-menu-item role="menuitem">
+            <a href="http://localhost:3000/forms.html" class="nav__link"
+              >Forms</a
+            >
+          </li>
+          <li class="nav__item" data-menu-item role="menuitem">
+            <a href="http://localhost:3000/controls.html" class="nav__link"
+              >Controls</a
+            >
+          </li>
+          <li class="nav__item" data-menu-item role="menuitem">
+            <a href="http://localhost:3000/components.html" class="nav__link"
+              >Components</a
+            >
+          </li>
+          <li class="nav__item" data-menu-item role="menuitem">
+            <a href="http://localhost:3000/flex.html" class="nav__link">Flex</a>
+          </li>
+          <li class="nav__item" data-menu-item role="menuitem">
+            <a href="http://localhost:3000/buttons.html" class="nav__link">Buttons</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button
+        class="btn-reset btn burger-btn"
+        aria-controls="menu-list"
+        aria-label="Open"
+        aria-expanded="false"
+        aria-haspopup="true"
+        data-burger
+      >
+        <span class="burger-btn__line" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+      <main class="main">
+        <!-- *********************************************************************** -->
+        <!--                              Dropdown hover                             -->
+        <!-- *********************************************************************** -->
+
+        <div class="container">
+          <h1>Dropdown hover</h1>
+          <div class="dropdown">
+            <a href="#" class="btn-reset dropdown__btn btn-primary">Dropdown</a>
+            <ul class="list-reset dropdown__list">
+              <li class="list-reset dropdown__item">Item 1</li>
+              <li class="list-reset dropdown__item">Item 2</li>
+              <li class="list-reset dropdown__item">Item 3</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- *********************************************************************** -->
+        <!--                              Standart Select                            -->
+        <!-- *********************************************************************** -->
+        <div class="standart-select">
+          <div class="container">
+            <div class="block">
+              <label for="standart-select" class="standart-select__label"
+                >Standart select</label
+              >
+              <div class="standart-select__body">
+                <select
+                  name="select-category"
+                  id="standart-select"
+                  class="standart-select__select"
+                >
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                  <option value="4">Option 4</option>
+                  <option value="5">Option 5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- **************************************************************** -->
+        <!--                                                      Star Rating -->
+        <!-- **************************************************************** -->
+        <div class="container">
+          <form>
+            <h1 class="section-title">Star Rating</h1>
+            <div class="rating rating__set">
+              <div class="rating__body">
+                <div class="rating__active"></div>
+                <div class="rating__items">
+                  <input
+                    type="radio"
+                    class="rating__item"
+                    name="rating"
+                    value="1"
+                  />
+                  <input
+                    type="radio"
+                    class="rating__item"
+                    name="rating"
+                    value="2"
+                  />
+                  <input
+                    type="radio"
+                    class="rating__item"
+                    name="rating"
+                    value="3"
+                  />
+                  <input
+                    type="radio"
+                    class="rating__item"
+                    name="rating"
+                    value="4"
+                  />
+                  <input
+                    type="radio"
+                    class="rating__item"
+                    name="rating"
+                    value="5"
+                  />
+                </div>
+              </div>
+              <div class="rating__value">3.6</div>
+            </div>
+            <button class="btn-reset btn-primary" type="submit">Send</button>
+          </form>
+        </div>
+        <div class="container">
+          <form>
+            <h1 class="section-title">Star Rating</h1>
+            <div class="rating">
+              <div class="rating__body">
+                <div class="rating__active"></div>
+                <div class="rating__items">
+                  <input
+                    type="radio"
+                    class="rating__item"
+                    name="rating"
+                    value="1"
+                  />
+                  <input
+                    type="radio"
+                    class="rating__item"
+                    name="rating"
+                    value="2"
+                  />
+                  <input
+                    type="radio"
+                    class="rating__item"
+                    name="rating"
+                    value="3"
+                  />
+                  <input
+                    type="radio"
+                    class="rating__item"
+                    name="rating"
+                    value="4"
+                  />
+                  <input
+                    type="radio"
+                    class="rating__item"
+                    name="rating"
+                    value="5"
+                  />
+                </div>
+              </div>
+              <div class="rating__value">3.6</div>
+            </div>
+            <button class="btn-reset btn-primary" type="submit">Send</button>
+          </form>
+        </div>
+        <div class="container">
+          <div>
+            <h1 class="section-title">Star Rating Ajax</h1>
+            <div data-ajax="true" class="rating rating__set">
+              <div class="rating__body">
+                <div class="rating__active"></div>
+                <div class="rating__items">
+                  <input
+                    type="radio"
+                    class="rating__item"
+                    name="rating"
+                    value="1"
+                  />
+                  <input
+                    type="radio"
+                    class="rating__item"
+                    name="rating"
+                    value="2"
+                  />
+                  <input
+                    type="radio"
+                    class="rating__item"
+                    name="rating"
+                    value="3"
+                  />
+                  <input
+                    type="radio"
+                    class="rating__item"
+                    name="rating"
+                    value="4"
+                  />
+                  <input
+                    type="radio"
+                    class="rating__item"
+                    name="rating"
+                    value="5"
+                  />
+                </div>
+              </div>
+              <div class="rating__value">1.6</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ========================================================================================= -->
+        <!-- *********************************************************************** -->
+        <!--                              Custom Select                              -->
+        <!-- *********************************************************************** -->
+        <!-- <h3>Custom Select</h3>
+
+<div class="block-wrapper">
+  <div class="dropdown">
+    <button class="dropdown__button">Option 1</button>
+    <ul class="list-reset dropdown__list">
+      <li class="dropdown__list-item" data-value="1">Option 1</li>
+      <li class="dropdown__list-item" data-value="2">Option 2</li>
+      <li class="dropdown__list-item" data-value="3">Option 3</li>
+      <li class="dropdown__list-item" data-value="4">Option 4</li>
+      <li class="dropdown__list-item" data-value="5">Option 5</li>
+    </ul>
+    <input
+      class="visually-hidden"
+      type="text"
+      name="select-category"
+      value="1"
+    />
+  </div>
+</div> -->
+
+        <!-- ****************************************************************************** -->
+        <!--                                   Search                                       -->
+        <!-- ****************************************************************************** -->
+
+        <!-- ******************************* search-box *********************************** -->
+
+        <!-- <div class="block-wrapper">
+  <div" class="search-box">
+    <input
+      type="text"
+      class="search-box__input"
+      autocomplete="off"
+      placeholder="Search here..."
+      />
+    <button class="btn-reset search-box__btn">
+      <span class="material-symbols-outlined">
+        search
+      </span>
+    </button>
+  </div>
+</div> -->
+
+        <!-- ******************************* search-bar *********************************** -->
+        <!-- *********************************** JS *************************************** -->
+        <!-- <div class="block-wrapper">
+  <div class="search-bar">
+    <svg class="search-bar__icon">
+      <use xlink:href="img/sprite.svg#search"></use>
+    </svg>
+    <div class="search-bar__body search-bar"> -->
+        <!-- <div class="search-bar__body search-bar--open"> -->
+        <!-- <form class="search-bar__form" action="#">
+        <div class="search-bar__input-wrapper">
+          <input class="search-bar__input" type="text" placeholder="Text" />
+          <div class="search-bar__clear">
+            <svg class="search-bar__icon-clear">
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </div>
+        </div>
+        <input class="search-bar__btn" type="submit" value="Search" />
+      </form>
+    </div>
+  </div>
+</div> -->
+
+        <!-- ****************************************************************************** -->
+        <!--                          Search Bar With Auto-complete                                       -->
+        <!-- ****************************************************************************** -->
+        <!-- <div class="block-wrapper">
+  <div class="search-bar__container">
+    <div id="search-bar" class="search-bar">
+      <label class="search-bar__label" for="searchInput">Search bar with auto-complete</label>
+      <input
+        class="input-reset search-bar__input"
+        id="searchInput"
+        type="text"
+        placeholder="Start typing to search..."
+        autocomplete="off"
+      />
+      <span class="material-symbols-outlined"> search </span>
+      <ul id="search-bar__results" class="list-reset search-bar__list">
+        <li class="search-bar__res search-bar__item" data-result>Bob</li>
+        <li class="search-bar__res search-bar__item" data-result>Kate</li>
+        <li class="search-bar__res search-bar__item" data-result>Cindy</li>
+        <li class="search-bar__res search-bar__item" data-result>Candy</li>
+        <li class="search-bar__res search-bar__item" data-result>Kelly</li>
+        <li class="search-bar__res search-bar__item" data-result>Frank</li>
+        <li class="search-bar__res search-bar__item" data-result>Joe</li>
+        <li class="search-bar__res search-bar__item" data-result>Malaysia</li>
+        <li class="search-bar__res search-bar__item" data-result>Brittney</li>
+        <li class="search-bar__res search-bar__item" data-result>Mike</li>
+        <li class="search-bar__res search-bar__item" data-result>Julian</li>
+        <li class="search-bar__res search-bar__item" data-result>David</li>
+        <li class="search-bar__res search-bar__item" data-result>Fred</li>
+        <li class="search-bar__res search-bar__item" data-result>Jason</li>
+      </ul>
+    </div>
+  </div>
+</div> -->
+
+        <!-- ****************************************************************************** -->
+        <!--                                 Custom Checkbox Toggle                               -->
+        <!-- ****************************************************************************** -->
+        <!-- <div class="container">
+  <div class="checkbox-wrapper-6">
+    <input class="tgl tgl-light" id="cb1-6" type="checkbox"/>
+    <label class="tgl-btn" for="cb1-6">
+  </div>
+</div> -->
+
+        <!-- ****************************************************************************** -->
+        <!--                               Custom input range                               -->
+        <!--                                 nouislider JS                                  -->
+        <!-- ****************************************************************************** -->
+
+        <div class="container">
+          <div class="custom__input-range">
+            <div class="range-slider" id="slider"></div>
+            <div class="range-slider__input-wrapper">
+              <label class="range-slider__label">
+                <span class="range-slider__text">від</span>
+                <input
+                  type="number"
+                  class="range-slider__input"
+                  min="500"
+                  max="10000"
+                  placeholder="500"
+                  id="input-0"
+                />
+                <span class="range-slider__text">₴</span>
+              </label>
+              <label class="range-slider__label">
+                <span class="range-slider__text">до</span>
+                <input
+                  type="number"
+                  class="range-slider__input"
+                  min="500"
+                  max="10000"
+                  placeholder="10000"
+                  id="input-1"
+                />
+                <span class="range-slider__text">₴</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- ****************************************************************************** -->
+        <!--                                  Star rating                                   -->
+        <!--                                      JS                                        -->
+        <!-- ****************************************************************************** -->
+        <!-- <div class="container">
+  <div class="test__wrapper">
+    <form action="#">
+      <div class="rating__wrapper">
+        <div class="rating">
+          <input type="radio" class="rating__input" id="star-5">
+          <label for="star-5" class="rating__label"></label>
+          <input type="radio" class="rating__input" id="star-4">
+          <label for="star-4" class="rating__label"></label>
+          <input type="radio" class="rating__input" id="star-3">
+          <label for="star-3" class="rating__label"></label>
+          <input type="radio" class="rating__input" id="star-2">
+          <label for="star-2" class="rating__label"></label>
+          <input type="radio" class="rating__input" id="star-1" checked>
+          <label for="star-1" class="rating__label"></label>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div> -->
+
+        <!-- ================================================================================================ -->
+        <!-- combobox -->
+        <!-- ================================================================================================ -->
+        <div class="container">
+          <div class="combobox" data-combobox>
+            <button
+              class="btn-reset combobox__btn"
+              role="combobox"
+              id="select"
+              value="Select"
+              aria-controls="listbox"
+              aria-haspopup="listbox"
+              tabindex="0"
+              aria-expanded="false"
+            >
+              Select
+            </button>
+            <div id="announcement" aria-live="assertive" role="alert"></div>
+            <ul class="list-reset combobox__list" role="listbox" id="listbox">
+              <li class="combobox__item" role="option">Mecury</li>
+              <li class="combobox__item" role="option">Eggs</li>
+              <li class="combobox__item" role="option">Venus</li>
+              <li class="combobox__item" role="option">Earth</li>
+              <li class="combobox__item" role="option">Mars</li>
+              <li class="combobox__item" role="option">Jupiter</li>
+              <li class="combobox__item" role="option">Saturn</li>
+              <li class="combobox__item" role="option">Elephant</li>
+              <li class="combobox__item" role="option">Uranus</li>
+              <li class="combobox__item" role="option">Neptune</li>
+              <li class="combobox__item" role="option">Eleplast</li>
+              <li class="combobox__item" role="option">Pluto (I’m a planet)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="custom-checkbox">
+            <input
+              class="custom-checkbox__input"
+              id="checkbox"
+              type="checkbox"
+            />
+            <label for="checkbox" class="custom-checkbox__label"
+              >Checkbox</label
+            >
+          </div>
+
+          <div class="custom-checkbox">
+            <input
+              class="custom-checkbox__input"
+              id="checked"
+              type="checkbox"
+              checked
+            />
+            <label for="checked" class="custom-checkbox__label">Checked</label>
+          </div>
+
+          <div class="custom-checkbox">
+            <input
+              class="custom-checkbox__input"
+              id="disabled"
+              type="checkbox"
+              disabled
+            />
+            <label for="disabled" class="custom-checkbox__label"
+              >Disabled</label
+            >
+          </div>
+
+          <div class="custom-checkbox">
+            <input
+              class="custom-checkbox__input"
+              id="checked-disabled"
+              type="checkbox"
+              checked
+              disabled
+            />
+            <label for="checked-disabled" class="custom-checkbox__label"
+              >Checked Disabled</label
+            >
+          </div>
+        </div>
+        <div class="container">
+          <label class="container-checkbox"
+            >Checkbox
+            <input type="checkbox" checked="checked" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </main>
+
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__container-big">
+      <a href="/" class="logo footer__logo">
+        <img
+          loading="lazy"
+          src="../img/tpl/star_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg"
+          class="img logo__image"
+          alt="Brand"
+        />
+      </a>
+      <a href="tel:+380100100100" class="footer__phone phone">+38 0100 100 100</a>
+      <div class="footer__address">
+        2637 Fairfax Ave Culver City, CA 90232
+      </div>
+      <div class="footer__copyright">
+        Segway California © 2017
+      </div>
+    </div>
+  </div>
+  <!-- ====================================================================================== -->
+  <div class="container">
+    <div class="footer__container">
+      <div class="logo footer__logo">
+        <a href="#" class="logo__link"> Logo </a>
+        <p class="logo__description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, aut!
+        </p>
+      </div>
+      <div class="footer__columns-wrapper">
+        <div class="footer-column">
+          <h4 class="footer-column__title">Title</h4>
+          <ul class="list-reset footer-column__list">
+            <li class="footer-column__item">
+              <a href="#!" class="footer-column__link">Lorem, ipsum dolor.</a>
+            </li>
+            <li class="footer-column__item">
+              <a href="#!" class="footer-column__link">Lorem, ipsum dolor.</a>
+            </li>
+            <li class="footer-column__item">
+              <a href="#!" class="footer-column__link">Lorem, ipsum dolor.</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-column__title">Title</h4>
+          <ul class="list-reset footer-column__list">
+            <li class="footer-column__item">
+              <a href="#!" class="footer-column__link">Lorem, ipsum dolor.</a>
+            </li>
+            <li class="footer-column__item">
+              <a href="#!" class="footer-column__link">Lorem, ipsum dolor.</a>
+            </li>
+            <li class="footer-column__item">
+              <a href="#!" class="footer-column__link">Lorem, ipsum dolor.</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-column__title">Title</h4>
+          <ul class="list-reset footer-column__list">
+            <li class="footer-column__item">
+              <a href="tel:380557586" class="footer-column__link"
+                >+3(8)055-75-86</a
+              >
+            </li>
+            <li class="footer-column__item">
+              <a href="#" class="footer-column__link">order@world-bike.ua</a>
+            </li>
+            <li class="footer-column__item">
+              <a href="#!" class="footer-column__link"
+                >м. Новомосковськ, вул. Набережна, 100</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="copyright">
+      <span class="copyright__brand">© 2024 world bike</span>
+      <span class="copyright__description"> Угода користувача</span>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+</html>

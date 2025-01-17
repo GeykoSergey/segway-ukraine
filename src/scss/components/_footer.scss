@@ -1,5 +1,7 @@
 .footer {
   background-color: $gray-darker;
+	padding: 16px 0;
+	color: #fff;
 
 	&__container-big {
 		display: flex;
@@ -14,6 +16,7 @@
 
 	&__phone {
 		margin-left: auto;
+		color: inherit;
 	}
 
 	&__address {
@@ -28,4 +31,94 @@
 .image {
 }
 .phone {
+}
+
+// ===================================================================================================================
+
+.footer {
+	background-color: #263238;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 24px 0;
+	}
+
+	&__logo {
+	}
+
+	&__columns-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.logo {
+	&__link {
+		font-size: 36px;
+		font-weight: 700;
+		color: #fff;
+	}
+
+	&__description {
+		color: #fff;
+	}
+}
+
+.footer-column {
+	flex: 0 0 148px;
+	width: 148px;
+	padding: 12px 0;
+	color: #fff;
+	font-size: 16px;
+
+	&:not(:last-child) {
+		margin-right: 20px;
+	}
+
+	&__title {
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 1.2;
+		margin-bottom: 20px;
+	}
+
+	&__list {
+	}
+
+	&__item {
+	}
+
+	&__link {
+		display: block;
+		color: #fff;
+		transition: color 0.3s ease-in-out;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #fff30a;
+			}
+		}
+
+		@media (hover: none) {
+			&:active {
+				text-decoration: none;
+				color: #fff30a;
+				transition: none;
+			}
+		}
+	}
+}
+
+.copyright {
+	padding-top: 16px;
+	padding-bottom: 24px;
+	color: #fff;
+	font-size: 16px;
+
+	&__brand {
+	}
+
+	&__description {
+	}
 }

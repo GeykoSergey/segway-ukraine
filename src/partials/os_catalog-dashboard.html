@@ -1,0 +1,63 @@
+<div class="catalog-settings">
+  <button class="btn-reset filter-mobile__btn-open">
+    <svg
+      class="icon view-mode__icon view-mode__icon--grid view-mode__icon--no-active"
+    >
+      <use xlink:href="img/sprite.svg#filter-icon"></use>
+    </svg>
+  </button>
+  <div class="catalog__sort">
+    <div class="dropdown">
+      <button class="dropdown__button">Option 1</button>
+      <ul class="list-reset dropdown__list">
+        <li class="dropdown__list-item" data-value="1">Option 1</li>
+        <li class="dropdown__list-item" data-value="2">Option 2</li>
+        <li class="dropdown__list-item" data-value="3">Option 3</li>
+        <li class="dropdown__list-item" data-value="4">Option 4</li>
+        <li class="dropdown__list-item" data-value="5">Option 5</li>
+      </ul>
+      <input
+        class="visually-hidden"
+        type="text"
+        name="select-category"
+        value=""
+      />
+    </div>
+  </div>
+  <div class="view-mode">
+    <div class="view-mode__wrapper">
+      <button
+        title="Таблиця"
+        class="btn-reset view-mode__btn view-mode__btn--list view-mode__btn--active"
+      >
+        <svg
+          class="icon view-mode__icon view-mode__icon--list view-mode__icon--active"
+        >
+          <use xlink:href="img/sprite.svg#icon-list"></use>
+        </svg>
+      </button>
+      <button
+        title="Таблиця"
+        class="btn-reset view-mode__btn view-mode__btn--grid view-mode__btn--no-active"
+      >
+        <svg
+          class="icon view-mode__icon view-mode__icon--grid view-mode__icon--no-active"
+        >
+          <use xlink:href="img/sprite.svg#icon-grid"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- <div class="catalog__view-switcher view-switcher">
+    <button class="btn-reset view-switcher__btn">
+      <div class="view-switcher__icon--grid"></div>
+    </button>
+    <button class="btn-reset view-switcher__btn">
+      <div
+        class="view-switcher__icon--grid view-switcher__icon--wide-grid"
+      ></div>
+    </button>
+  </div> -->
+  <!-- view-switcher end -->
+</div>

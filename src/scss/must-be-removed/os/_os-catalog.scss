@@ -1,0 +1,27 @@
+.catalog {
+  background-color: #fff;
+
+  &__title {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  &__main {
+    display: flex;
+  }
+}
+
+.catalog-filter {
+  flex: 0 0 290px;
+  width: 290px;
+}
+
+.products {
+  flex: 1 1 auto;
+}
+
+.products__container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+}

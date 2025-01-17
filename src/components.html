@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html')
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header.html')
+      <main>
+        <!-- Табы Макс -->
+
+        <!-- <div class="tabs">
+  <ul class="list-reset tabs__list">
+    <li class="tabs__item"><button class="btn-reset btn tabs__btn tabs__btn--active" data-tabs-path="1">Button 1</button></li>
+    <li class="tabs__item"><button class="btn-reset btn tabs__btn" data-tabs-path="2">Button 2</button></li>
+    <li class="tabs__item"><button class="btn-reset btn tabs__btn" data-tabs-path="3">Button 3</button></li>
+  </ul>
+  <div class="tabs__content tabs__content--active" data-tabs-target="1">
+    <div class="content-tabs">
+      1. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro aliquid illum dolor fugit! Eveniet, distinctio a. Ipsa nobis molestiae nulla aperiam quod nihil, quis sint quae voluptates voluptatem repellat consequuntur?
+    </div>
+  </div>
+  <div class="tabs__content" data-tabs-target="2">
+    <div class="content-tabs">
+      2. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro aliquid illum dolor fugit! Eveniet, distinctio a. Ipsa nobis molestiae nulla aperiam quod nihil, quis sint quae voluptates voluptatem repellat consequuntur?
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro aliquid illum dolor fugit! Eveniet, distinctio a. Ipsa nobis molestiae nulla aperiam quod nihil, quis sint quae voluptates voluptatem repellat consequuntur?
+    </div>
+  </div>
+  <div class="tabs__content" data-tabs-target="3">
+    <div class="content-tabs">
+      3. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro aliquid illum dolor fugit! Eveniet, distinctio a. Ipsa nobis molestiae nulla aperiam quod nihil, quis sint quae voluptates voluptatem repellat consequuntur?
+    </div>
+  </div>
+  <button class="btn-reset btn tabs__arrow tabs__arrow--prev" aria-label="Назад"><img src="./../img/svg/navigate-before-white.svg" alt="" class="tabs__img icon"></button>
+  <button class="btn-reset btn tabs__arrow tabs__arrow--next" aria-label="Вперед"><img src="./../img/svg/navigate-next-white.svg" alt="" class="tabs__img icon"></button>
+</div> -->
+
+        <!-- ================================================================= -->
+        <!-- Рабочие табы -->
+        <!-- ================================================================= -->
+        <div class="container">
+          <h1 class="section-title">Tabs</h1>
+          <div class="tabs-wrapper">
+            <div class="tabs">
+              <ul class="list-reset tabs-control__list">
+                <li class="tabs-control__item" data-tab-control="tab-1">
+                  Таб 1
+                </li>
+                <li class="tabs-control__item" data-tab-control="tab-2">
+                  Таб 2
+                </li>
+                <li class="tabs-control__item" data-tab-control="tab-3">
+                  Таб 3
+                </li>
+              </ul>
+
+              <div class="tabs-content" data-tab-content="tab-1">
+                <h3>Таб 1</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Minus, ducimus fugit corrupti culpa libero quam mollitia magni
+                  pariatur, quos soluta commodi porro voluptatem!
+                </p>
+              </div>
+
+              <div class="tabs-content hidden" data-tab-content="tab-2">
+                <h3>Таб 2</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Minus, ducimus fugit corrupti culpa libero quam mollitia magni
+                  pariatur, quos soluta commodi porro voluptatem!
+                </p>
+              </div>
+
+              <div class="tabs-content hidden" data-tab-content="tab-3">
+                <h3>Таб 3</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Minus, ducimus fugit corrupti culpa libero quam mollitia magni
+                  pariatur, quos soluta commodi porro voluptatem!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ================================================================= -->
+        <!-- Рабочие табы -->
+        <!-- ================================================================= -->
+
+        <!-- Midal -->
+
+        <!-- <button data-modal-btn-open="modal-1">   ==>   <div id="modal-1" data-modal class="fade-block"> -->
+
+        <div class="container">
+          <button
+            data-modal-btn-open="modal-2"
+            class="btn-reset btn btn-primary modal-open-btn"
+            type="button"
+          >
+            Open Modal
+          </button>
+
+          <div id="modal-2" data-modal class="modal modal-hidden">
+            <div class="modal__fade-block">
+              <div class="modal__window">
+                <div class="modal__content">
+                  <header class="modal__header">
+                    <h2 class="modal__title">Modal title</h2>
+                    <button
+                      type="button"
+                      class="btn-reset btn-primary modal-close-btn"
+                      aria-label="Close"
+                      data-modal-btn-close
+                    >
+                      Close
+                    </button>
+                  </header>
+                  <div class="modal__body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </div>
+                  <footer class="modal__footer">
+                    <button
+                      type="button"
+                      class="btn-reset btn-primary modal-close-btn"
+                      data-modal-btn-close
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn-reset btn-primary">
+                      Understood
+                    </button>
+                  </footer>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        @include('partials/accordeon.html')
+      </main>
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>
+

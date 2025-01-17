@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <meta name="mobile-web-app-capable" content="yes"> -->
+  <!-- <meta name="theme-color" content="Canvas"> -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>SegWay</title>
+  <link
+    rel="preload"
+    href="fonts/MullerRegular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=owl" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"
+  ></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <div class="site-container">
+      <header class="os-header fixed-block">
+  <!-- header-banner start-->
+  <!-- <div class="header-banner">
+    <div class="container">
+      <div class="header-banner__container">
+        <a href="#" class="header-banner__link"> Великий вибір ... </a>
+      </div>
+    </div>
+  </div> -->
+  <!-- header-banner end-->
+
+  <div class="os-header-top">
+    <div class="container">
+      <div class="header-top__container">
+        <div class="location">
+          <button class="btn-reset location__btn">
+            <img
+            class="location__img"
+            src="./img/wb/icon/wb-icon-location.svg"
+            alt="Location icon"
+          />
+          <span class="location__city">Новомосковськ</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header__container">
+      <a href="/" class="logo header__logo">
+        <img
+          loading="lazy"
+          src="./img/wb/logo.svg"
+          class="img logo__image"
+          alt="Brand"
+        />
+      </a>
+      <nav class="nav header__nav" title="Main menu" data-menu>
+        <ul class="list-reset nav__list">
+          <li class="nav__item">
+            <a href="#!" class="nav__link">Trade In</a>
+          </li>
+          <li class="nav__item">
+            <a href="#!" class="nav__link nav__link--active">Велосипеди</a>
+          </li>
+          <li class="nav__item">
+            <a href="#!" class="nav__link">Запчастини</a>
+          </li>
+          <li class="nav__item">
+            <a href="#!" class="nav__link">Додаткова інформація</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="user-dashboard">
+        <button class="btn-reset user-btn user-search-btn">
+          <img
+            class="user-search__img"
+            src="./img/wb/search.svg"
+            alt="Search icon"
+          />
+        </button>
+        <button class="btn-reset user-btn user-profile-btn">
+          <img
+            class="user-profile__img"
+            src="./img/wb/profile.svg"
+            alt="Profile icon"
+            data-modal-btn-open="modal-1"
+          />
+        </button>
+        <button class="btn-reset user-btn user-wishlist-btn">
+          <img
+            class="user-wishlist__img"
+            src="./img/wb/wishlist.svg"
+            alt="Wishlist icon"
+          />
+        </button>
+        <button class="btn-reset user-btn user-cart-btn">
+          <img class="user-cart__img" src="./img/wb/cart.svg" alt="Cart icon" />
+        </button>
+      </div>
+
+      <button
+        class="btn-reset burger-btn"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        data-burger
+      >
+        <span class="burger-btn__line"></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="main-nav__container">
+      <nav class="main-nav">
+        <ul class="list-reset main-nav__list">
+          <li class="main-nav__item">
+            <a href="#!" class="main-nav__link">Велосипеди</a>
+            <div class="main-nav__dropdown-wrapper">
+              <div class="main-nav__dropdown">
+                <ul class="list-reset main-subnav__list">
+                  <li class="main-subnav__item" data-submenu>
+                    <a href="#!" class="main-subnav__link">Гірські</a>
+                    <ul
+                      class="list-reset main-sub-subnav__list"
+                      data-sub-submenu
+                    >
+                      <li class="main-subnav__item">
+                        <a href="#!" class="main-subnav__link">Кланкери</a>
+                      </li>
+                      <li class="main-subnav__item">
+                        <a href="#!" class="main-subnav__link"
+                          >Крос-кантрі хардтейл</a
+                        >
+                      </li>
+                      <li class="main-subnav__item">
+                        <a href="#!" class="main-subnav__link"
+                          >Крос-кантрі двопідвісний</a
+                        >
+                      </li>
+                      <li class="main-subnav__item">
+                        <a href="#!" class="main-subnav__link">Фетбайк</a>
+                      </li>
+                      <li class="main-subnav__item">
+                        <a href="#!" class="main-subnav__link">Трейл</a>
+                      </li>
+                      <li class="main-subnav__item">
+                        <a href="#!" class="main-subnav__link">Ендуро</a>
+                      </li>
+                      <li class="main-subnav__item">
+                        <a href="#!" class="main-subnav__link">Трейл</a>
+                      </li>
+                      <li class="main-subnav__item">
+                        <a href="#!" class="main-subnav__link">Олмаунтін</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="main-subnav__item" data-submenu>
+                    <a href="#!" class="main-subnav__link">Міські</a>
+                    <ul
+                      class="list-reset main-sub-subnav__list"
+                      data-sub-submenu
+                    >
+                      <li class="main-subnav__item">
+                        <a href="#!" class="main-subnav__link">Класичні</a>
+                      </li>
+                      <li class="main-subnav__item">
+                        <a href="#!" class="main-subnav__link">Круїзери</a>
+                      </li>
+                      <li class="main-subnav__item">
+                        <a href="#!" class="main-subnav__link">Складні</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="main-subnav__item">
+                    <a href="#!" class="main-subnav__link">Екстремальні</a>
+                  </li>
+                  <li class="main-subnav__item">
+                    <a href="#!" class="main-subnav__link">Шосейні</a>
+                  </li>
+                  <li class="main-subnav__item">
+                    <a href="#!" class="main-subnav__link">Дитячі</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="main-nav__item">
+            <a href="#!" class="main-nav__link">Запчастини</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#!" class="main-nav__link">Екіпірування</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#!" class="main-nav__link">Аксесуари</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- header-main start -->
+  <!-- <div class="header-main">
+    <div class="container">
+      <div class="header-main__container">
+        <button class="btn-reset btn open-catalog-btn">Каталог</button> -->
+
+  <!-- search start -->
+  <!-- <div class="search">
+          <form method="#" action="#" autocomplete="off" class="search-form">
+            <input
+              type="text"
+              placeholder="Пошук товарів"
+              class="search-form__input"
+            />
+            <button class="btn-reset search-form__btn">
+              <svg class="icon header-search__icon">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+        </div> -->
+  <!-- search end -->
+
+  <!-- user-dashboard start -->
+  <!-- <div class="user-dashboard">
+          <button class="btn-reset user-btn user-profile-btn" data-modal-button="modal-1">
+            <div class="user__img user__img--profile"></div>
+          </button>
+          <button class="btn-reset user-btn user-compare-btn">
+            <div class="user__img user__img--compare"></div>
+          </button>
+          <button class="btn-reset user-btn user-wishlist-btn">
+            <div class="user__img user__img--wishlist"></div>
+          </button>
+          <button class="btn-reset user-btn user-cart-btn">
+            <div class="user__img user__img--cart"></div>
+          </button>
+        </div> -->
+  <!-- user-dashboard end -->
+  <!-- </div>
+    </div>
+  </div> -->
+
+  <!-- ============================= -->
+
+  <!-- ============================= -->
+
+  <!-- header-main end -->
+</header>
+      <main class="main">
+        <!-- <div class="container">
+          <button class="cart__btn reset-btn" data-modal-button type="button">
+            Cart
+          </button>
+        </div> -->
+
+        <div class="container">
+  <div class="breadcrumb">
+    <ul class="list-reset breadcrumb__list">
+      <li class="breadcrumb__item">
+        <a href="#!" class="breadcrumb__link">Головна</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a href="#" class="breadcrumb__link">Велосипеди</a>
+      </li>
+      <li class="breadcrumb__item breadcrumb__item--active">
+        Гірські велосипеди
+      </li>
+    </ul>
+  </div>
+</div>
+
+        <!-- <div class="container">
+          <div class="product__wrapper">
+            <div class="product">
+              <div class="product__header">
+                <div class="product__promo product-promo">
+                  <ul class="list-reset product-promo__list">
+                    <li
+                      class="product-promo__item product-promo__item--top-sellers"
+                      title="Топ продажу"
+                    >
+                      ТОП
+                    </li>
+                    <li
+                      class="product-promo__item product-promo__item--discount"
+                    >
+                      -25%
+                    </li>
+                    <li
+                      class="product-promo__item product-promo__item--present"
+                    >
+                      New
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <a href="#" class="product__link">
+                <p class="product__hover-text">посмотреть товар</p>
+                <div class="product__image">
+                  <img src="../img/wb-products/product-1.jpg" alt="" />
+                </div>
+
+                <h4 class="product__title">
+                  Look 977 BLACK FLUO YELLOW GREEN XT 2x11S AMC 2018
+                </h4>
+              </a>
+              <div class="product__model-color-swatch model-color-swatch">
+                <ul class="list-reset model-color-swatch__list">
+                  <li
+                    class="model-color-swatch__item model-color-swatch__item--red"
+                  >
+                    &nbsp;
+                  </li>
+                  <li
+                    class="model-color-swatch__item model-color-swatch__item--black"
+                  >
+                    &nbsp;
+                  </li>
+                  <li
+                    class="model-color-swatch__item model-color-swatch__item--green"
+                  >
+                    &nbsp;
+                  </li>
+                </ul>
+              </div>
+              <div class="product__actions">
+                <div class="product__feedback">
+                  <div class="rating-mini">
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="product__reviews">
+                    <button class="btn-reset icon-lg reviews__btn"></button>
+                    <div class="reviews__count">27</div>
+                  </div>
+                </div>
+                <button class="btn-reset icon-lg compare__btn"></button>
+                <button class="btn-reset icon-lg favorite__btn"></button>
+              </div>
+
+              <div class="product__footer">
+                <div class="product__price">
+                  <span class="product__price product__price--old"
+                    >10000 $</span
+                  >
+                  <span class="product__price product__price--new">9900 $</span>
+                  <span class="product__notyfi">нет в наличии</span>
+                </div>
+
+                <button class="btn-reset btn product__btn">
+                  <img src="../img/e-commerce/icon/shopping_cart.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- ******************************************************************** -->
+        <!-- filter -->
+        <!-- ******************************************************************** -->
+
+        <section class="catalog">
+          <div class="container">
+            <div class="catalog__container">
+              <h1 class="catalog__title">Гірські велосипеди</h1>
+              <div class="catalog__main">
+                <div class="filter-overlay">
+  <div class="filter catalog-filter">
+    <div class="filter__wrapper">
+      <header class="filter__header">
+        <h3 class="filter__title">Підбір за параметрами</h3>
+        <button class="btn-reset filter-mobile__btn-close"></button>
+      </header>
+      <form action="#!" class="filter__form form-filter">
+        <fieldset class="form-filter__fieldset">
+          <legend class="form-filter__legend">
+            Тільки у наявності
+          </legend>
+          <div class="custom-checkbox-toggle">
+            <input
+              class="tgl tgl-light"
+              id="instock"
+              type="checkbox"
+              checked
+            />
+            <label class="tgl-btn" for="instock"></label>
+          </div>
+        </fieldset>
+        <fieldset class="form-filter__fieldset">
+          <legend
+            class="form-filter__legend"
+            data-name="filter-legend"
+          >
+            Категорії товару
+          </legend>
+          <ul class="list-reset form-filter__list">
+            <li class="form-filter__item">
+              <div class="custom-checkbox">
+                <input
+                  class="custom-checkbox__input"
+                  id="triathlon"
+                  type="checkbox"
+                />
+                <label for="triathlon" class="custom-checkbox__label"
+                  >Велосипеди для тріатлону</label
+                >
+              </div>
+            </li>
+            <li class="form-filter__item">
+              <div class="custom-checkbox">
+                <input
+                  class="custom-checkbox__input"
+                  id="mountain"
+                  type="checkbox"
+                  checked
+                />
+                <label for="mountain" class="custom-checkbox__label"
+                  >Гірські велосипеди</label
+                >
+              </div>
+            </li>
+            <li class="form-filter__item">
+              <div class="custom-checkbox">
+                <input
+                  class="custom-checkbox__input"
+                  id="urban"
+                  type="checkbox"
+                />
+                <label for="urban" class="custom-checkbox__label"
+                  >Міські велосипеди</label
+                >
+              </div>
+            </li>
+            <li class="form-filter__item">
+              <div class="custom-checkbox">
+                <input
+                  class="custom-checkbox__input"
+                  id="gravel"
+                  type="checkbox"
+                />
+                <label for="gravel" class="custom-checkbox__label"
+                  >Гравійні велосипеди</label
+                >
+              </div>
+            </li>
+            <li class="form-filter__item">
+              <div class="custom-checkbox">
+                <input
+                  class="custom-checkbox__input"
+                  id="double-hung"
+                  type="checkbox"
+                />
+                <label
+                  for="double-hung"
+                  class="custom-checkbox__label"
+                  >Двопідвісні велосипеди</label
+                >
+              </div>
+            </li>
+          </ul>
+          <button
+            type="submit"
+            class="btn-reset form-filter__more-btn"
+          >
+            Показати ще
+          </button>
+        </fieldset>
+        <fieldset class="form-filter__fieldset">
+          <legend
+            class="form-filter__legend"
+            data-name="filter-legend"
+          >
+            Ціна
+          </legend>
+          <div class="custom__input-range">
+            <div class="range-slider" id="slider"></div>
+            <div class="range-slider__input-wrapper">
+              <label class="range-slider__label">
+                <span class="range-slider__text">від</span>
+                <input
+                  type="number"
+                  class="range-slider__input"
+                  min="500"
+                  max="10000"
+                  placeholder="500"
+                  id="input-0"
+                />
+                <span class="range-slider__text">₴</span>
+              </label>
+              <label class="range-slider__label">
+                <span class="range-slider__text">до</span>
+                <input
+                  type="number"
+                  class="range-slider__input"
+                  min="500"
+                  max="10000"
+                  placeholder="10000"
+                  id="input-1"
+                />
+                <span class="range-slider__text">₴</span>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="form-filter__fieldset">
+          <legend
+            class="form-filter__legend"
+            data-name="filter-legend"
+          >
+            Бренд
+          </legend>
+          <div class="form-filter__list-wrapper">
+            <ul class="list-reset form-filter__list">
+              <li class="form-filter__item">
+                <div class="custom-checkbox">
+                  <input
+                    class="custom-checkbox__input"
+                    id="bianci"
+                    type="checkbox"
+                  />
+                  <label for="bianci" class="custom-checkbox__label">
+                    Bianci
+                    <span class="form-filter__amount">(24)</span>
+                  </label>
+                </div>
+              </li>
+              <li class="form-filter__item">
+                <div class="custom-checkbox">
+                  <input
+                    class="custom-checkbox__input"
+                    id="bmc"
+                    type="checkbox"
+                    checked
+                  />
+                  <label for="bmc" class="custom-checkbox__label">
+                    BMC
+                    <span class="form-filter__amount">(118)</span>
+                  </label>
+                </div>
+              </li>
+              <li class="form-filter__item">
+                <div class="custom-checkbox">
+                  <input
+                    class="custom-checkbox__input"
+                    id="ciclistino"
+                    type="checkbox"
+                  />
+                  <label
+                    for="ciclistino"
+                    class="custom-checkbox__label"
+                  >
+                    Ciclistino
+                    <span class="form-filter__amount">(2)</span>
+                  </label>
+                </div>
+              </li>
+              <li class="form-filter__item">
+                <div class="custom-checkbox">
+                  <input
+                    class="custom-checkbox__input"
+                    id="cipollini"
+                    type="checkbox"
+                  />
+                  <label
+                    for="cipollini"
+                    class="custom-checkbox__label"
+                  >
+                    Cipollini
+                    <span class="form-filter__amount">(38)</span>
+                  </label>
+                </div>
+              </li>
+              <li class="form-filter__item">
+                <div class="custom-checkbox">
+                  <input
+                    class="custom-checkbox__input"
+                    id="colnago"
+                    type="checkbox"
+                  />
+                  <label for="colnago" class="custom-checkbox__label">
+                    Colnago
+                    <span class="form-filter__amount">(19)</span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+            <button
+              type="submit"
+              class="btn-reset form-filter__more-btn"
+            >
+              Показати ще
+            </button>
+          </div>
+        </fieldset>
+        <fieldset class="form-filter__fieldset">
+          <legend
+            class="form-filter__legend"
+            data-name="filter-legend"
+          >
+            Матеріал рами
+          </legend>
+          <div class="form-filter__list-wrapper">
+            <ul class="list-reset form-filter__list">
+              <li class="form-filter__item">
+                <div class="custom-checkbox">
+                  <input
+                    class="custom-checkbox__input"
+                    id="aluminum"
+                    type="checkbox"
+                  />
+                  <label
+                    for="aluminum"
+                    class="custom-checkbox__label"
+                  >
+                    Алюміній
+                    <span class="form-filter__amount">(55)</span>
+                  </label>
+                </div>
+              </li>
+              <li class="form-filter__item">
+                <div class="custom-checkbox">
+                  <input
+                    class="custom-checkbox__input"
+                    id="carbon"
+                    type="checkbox"
+                    checked
+                  />
+                  <label for="carbon" class="custom-checkbox__label">
+                    Карбон
+                    <span class="form-filter__amount">(74)</span>
+                  </label>
+                </div>
+              </li>
+              <li class="form-filter__item">
+                <div class="custom-checkbox">
+                  <input
+                    class="custom-checkbox__input"
+                    id="steel"
+                    type="checkbox"
+                  />
+                  <label for="steel" class="custom-checkbox__label">
+                    Сталь
+                    <span class="form-filter__amount">(2)</span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <button type="reset">Reset</button>
+      </form>
+      <footer class="filter__footer">
+        <button class="btn-reset filter-mobile__btn-close"></button>
+      </footer>
+    </div>
+  </div>
+</div>
+                <div class="products">
+                  <div class="catalog-settings">
+  <button class="btn-reset filter-mobile__btn-open">
+    <svg
+      class="icon view-mode__icon view-mode__icon--grid view-mode__icon--no-active"
+    >
+      <use xlink:href="img/sprite.svg#filter-icon"></use>
+    </svg>
+  </button>
+  <div class="catalog__sort">
+    <div class="dropdown">
+      <button class="dropdown__button">Option 1</button>
+      <ul class="list-reset dropdown__list">
+        <li class="dropdown__list-item" data-value="1">Option 1</li>
+        <li class="dropdown__list-item" data-value="2">Option 2</li>
+        <li class="dropdown__list-item" data-value="3">Option 3</li>
+        <li class="dropdown__list-item" data-value="4">Option 4</li>
+        <li class="dropdown__list-item" data-value="5">Option 5</li>
+      </ul>
+      <input
+        class="visually-hidden"
+        type="text"
+        name="select-category"
+        value=""
+      />
+    </div>
+  </div>
+  <div class="view-mode">
+    <div class="view-mode__wrapper">
+      <button
+        title="Таблиця"
+        class="btn-reset view-mode__btn view-mode__btn--list view-mode__btn--active"
+      >
+        <svg
+          class="icon view-mode__icon view-mode__icon--list view-mode__icon--active"
+        >
+          <use xlink:href="img/sprite.svg#icon-list"></use>
+        </svg>
+      </button>
+      <button
+        title="Таблиця"
+        class="btn-reset view-mode__btn view-mode__btn--grid view-mode__btn--no-active"
+      >
+        <svg
+          class="icon view-mode__icon view-mode__icon--grid view-mode__icon--no-active"
+        >
+          <use xlink:href="img/sprite.svg#icon-grid"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- <div class="catalog__view-switcher view-switcher">
+    <button class="btn-reset view-switcher__btn">
+      <div class="view-switcher__icon--grid"></div>
+    </button>
+    <button class="btn-reset view-switcher__btn">
+      <div
+        class="view-switcher__icon--grid view-switcher__icon--wide-grid"
+      ></div>
+    </button>
+  </div> -->
+  <!-- view-switcher end -->
+</div>
+
+                  <div class="products">
+  <div class="products__container">
+    <div class="product__wrapper">
+      <div class="product">
+        <div class="product__header">
+          <div class="product__promo product-promo">
+            <ul class="list-reset product-promo__list">
+              <li
+                class="product-promo__item product-promo__item--top-sellers"
+                title="Топ продажу"
+              >
+                ТОП
+              </li>
+              <li class="product-promo__item product-promo__item--discount">
+                -25%
+              </li>
+              <li class="product-promo__item product-promo__item--present">
+                New
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="#" class="product__link">
+          <p class="product__hover-text">посмотреть товар</p>
+          <div class="product__image">
+            <img src="../img/e-commerce/product-1.jpg" alt="" />
+          </div>
+
+          <h4 class="product__title">
+            Look 977 BLACK FLUO YELLOW GREEN XT 2×11S AMC 2018
+          </h4>
+        </a>
+        <div class="product__model-color-swatch model-color-swatch">
+          <ul class="list-reset model-color-swatch__list">
+            <li class="model-color-swatch__item model-color-swatch__item--red">
+               
+            </li>
+            <li
+              class="model-color-swatch__item model-color-swatch__item--black"
+            >
+               
+            </li>
+            <li
+              class="model-color-swatch__item model-color-swatch__item--green"
+            >
+               
+            </li>
+          </ul>
+        </div>
+        <div class="product__actions">
+          <div class="product__feedback">
+            <div class="rating-mini">
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="product__reviews">
+              <button class="btn-reset icon-lg reviews__btn"></button>
+              <div class="reviews__count">27</div>
+            </div>
+          </div>
+          <button class="btn-reset icon-lg compare__btn"></button>
+          <button class="btn-reset icon-lg favorite__btn"></button>
+        </div>
+
+        <div class="product__footer">
+          <div class="product__price">
+            <span class="product__price product__price--old">10000 $</span>
+            <span class="product__price product__price--new">9900 $</span>
+            <span class="product__notyfi">нет в наличии</span>
+          </div>
+
+          <button class="btn-reset btn product__btn">
+            <img src="../img/e-commerce/icon/shopping_cart.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+                  <div class="pagination">
+  <a href="#" class="pagination__btn pagination__btn--prev">Попередня</a>
+  <ul class="list-reset pagination__list">
+    <li class="pagination__item">
+      <a href="#" class="pagination__link">1</a>
+    </li>
+    <li class="pagination__item">
+      <a href="#" class="pagination__link">2</a>
+    </li>
+    <li class="pagination__item">
+      <a href="#" class="pagination__link">…</a>
+    </li>
+    <li class="pagination__item">
+      <a href="#" class="pagination__link">9</a>
+    </li>
+    <li class="pagination__item">
+      <a href="#" class="pagination__link">10</a>
+    </li>
+  </ul>
+  <a href="#" class="pagination__btn pagination__btn--next">Наступна</a>
+</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- product-card start -->
+        <div class="product-card">
+          <div class="container">
+            <h1 class="product-card__title">GTX Limited 300</h1>
+            <div class="product-card__container">
+              <div class="product-card__img-wrapper">
+                <div class="product-card__img-content">
+                  <img
+                    class="product-card__img"
+                    src="./img/e-commerce/sea-doo/product-1.png"
+                    alt=""
+                  />
+                </div>
+
+                <div class="product-card__option product-option">
+                  <label class="swap-color">
+                    <input
+                      class="swap-color__input"
+                      type="radio"
+                      name="swap-color"
+                      checked
+                      data-src-img="./img/e-commerce/sea-doo/product-1.png"
+                    />
+                    <span class="swap-color__btn"></span>
+                  </label>
+                  <label class="swap-color">
+                    <input
+                      class="swap-color__input"
+                      type="radio"
+                      name="swap-color"
+                      data-src-img="./img/e-commerce/sea-doo/product-3.png"
+                    />
+                    <span class="swap-color__btn"></span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- tabs start -->
+              <div class="tabs-container">
+                <div class="tabs tabs-product-card" id="mytab-2">
+                  <ul class="list-reset tabs-control-list">
+                    <li class="tabs-control__item" data-tab="tab-1">
+                      Про товар
+                    </li>
+                    <li class="tabs-control__item" data-tab="tab-2">
+                      Характеристики
+                    </li>
+                    <li class="tabs-control__item" data-tab="tab-3">
+                      Гарантія
+                    </li>
+                  </ul>
+
+                  <div class="tabs-content" data-tab-content="tab-1">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Minus, ducimus fugit corrupti culpa libero quam mollitia
+                      magni pariatur.
+                    </p>
+                  </div>
+
+                  <div class="card p-3 hidden" data-tab-content="tab-2">
+                    <table class="table">
+                      <thead>
+                        <th>Specification</th>
+                        <th>Value</th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Engine</td>
+                          <td>300</td>
+                        </tr>
+                        <tr>
+                          <td>Type</td>
+                          <td>1630 ACE™- 300</td>
+                        </tr>
+                        <tr>
+                          <td>Engine Horse Power</td>
+                          <td>300 hp</td>
+                        </tr>
+                        <tr>
+                          <td>Cylinders & Displacement</td>
+                          <td>1630 cc</td>
+                        </tr>
+                        <tr>
+                          <td>Engine cooling</td>
+                          <td>Closed-Loop Cooling System</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="card p-3 hidden" data-tab-content="tab-3">
+                    <p>
+                      Обмежена гарантія BRP поширюється на гідроцикл протягом
+                      одного року.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- tabs end -->
+            </div>
+          </div>
+        </div>
+        <!-- product-card end -->
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__container-big">
+      <a href="/" class="logo footer__logo">
+        <img
+          loading="lazy"
+          src="../img/tpl/star_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg"
+          class="img logo__image"
+          alt="Brand"
+        />
+      </a>
+      <a href="tel:+380100100100" class="footer__phone phone">+38 0100 100 100</a>
+      <div class="footer__address">
+        2637 Fairfax Ave Culver City, CA 90232
+      </div>
+      <div class="footer__copyright">
+        Segway California © 2017
+      </div>
+    </div>
+  </div>
+  <!-- ====================================================================================== -->
+  <div class="container">
+    <div class="footer__container">
+      <div class="logo footer__logo">
+        <a href="#" class="logo__link"> Logo </a>
+        <p class="logo__description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, aut!
+        </p>
+      </div>
+      <div class="footer__columns-wrapper">
+        <div class="footer-column">
+          <h4 class="footer-column__title">Title</h4>
+          <ul class="list-reset footer-column__list">
+            <li class="footer-column__item">
+              <a href="#!" class="footer-column__link">Lorem, ipsum dolor.</a>
+            </li>
+            <li class="footer-column__item">
+              <a href="#!" class="footer-column__link">Lorem, ipsum dolor.</a>
+            </li>
+            <li class="footer-column__item">
+              <a href="#!" class="footer-column__link">Lorem, ipsum dolor.</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-column__title">Title</h4>
+          <ul class="list-reset footer-column__list">
+            <li class="footer-column__item">
+              <a href="#!" class="footer-column__link">Lorem, ipsum dolor.</a>
+            </li>
+            <li class="footer-column__item">
+              <a href="#!" class="footer-column__link">Lorem, ipsum dolor.</a>
+            </li>
+            <li class="footer-column__item">
+              <a href="#!" class="footer-column__link">Lorem, ipsum dolor.</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-column__title">Title</h4>
+          <ul class="list-reset footer-column__list">
+            <li class="footer-column__item">
+              <a href="tel:380557586" class="footer-column__link"
+                >+3(8)055-75-86</a
+              >
+            </li>
+            <li class="footer-column__item">
+              <a href="#" class="footer-column__link">order@world-bike.ua</a>
+            </li>
+            <li class="footer-column__item">
+              <a href="#!" class="footer-column__link"
+                >м. Новомосковськ, вул. Набережна, 100</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="copyright">
+      <span class="copyright__brand">© 2024 world bike</span>
+      <span class="copyright__description"> Угода користувача</span>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+</html>

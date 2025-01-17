@@ -1,7 +1,138 @@
+// .sun-and-moon {
+//   & > :is(.moon, .sun, .sun-beams) {
+//     transform-origin: center center;
+//   }
+
+//   & > :is(.moon, .sun) {
+//     fill: var(--icon-fill);
+
+//     @nest .theme-toggle:is(:hover, :focus-visible) > & {
+//       fill: var(--icon-fill-hover);
+//     }
+//   }
+
+//   & > .sun-beams {
+//     stroke: var(--icon-fill);
+//     stroke-width: 2px;
+
+//     @nest .theme-toggle:is(:hover, :focus-visible) & {
+//       stroke: var(--icon-fill-hover);
+//     }
+//   }
+
+//   @nest [data-theme="dark"] & {
+//     & > .sun {
+//       transform: scale(1.75);
+//     }
+
+//     & > .sun-beams {
+//       opacity: 0;
+//     }
+
+//     & > .moon > circle {
+//       transform: translateX(-7px);
+
+//       @supports (cx: 1px) {
+//         transform: translateX(0);
+//         cx: 17px;
+//       }
+//     }
+//   }
+
+//   @media (--motionOK) {
+//     & > .sun {
+//       transition: transform .5s var(--ease-elastic-3);
+//     }
+
+//     & > .sun-beams {
+//       transition:
+//         transform .5s var(--ease-elastic-4),
+//         opacity .5s var(--ease-3)
+//       ;
+//     }
+
+//     & .moon > circle {
+//       transition: transform .25s var(--ease-out-5);
+
+//       @supports (cx: 1px) {
+//         transition: cx .25s var(--ease-out-5);
+//       }
+//     }
+
+//     @nest [data-theme="dark"] & {
+//       & > .sun {
+//         transform: scale(1.75);
+//         transition-timing-function: var(--ease-3);
+//         transition-duration: .25s;
+//       }
+
+//       & > .sun-beams {
+//         transform: rotateZ(-25deg);
+//         transition-duration: .15s;
+//       }
+
+//       & > .moon > circle {
+//         transition-delay: .25s;
+//         transition-duration: .5s;
+//       }
+//     }
+//   }
+// }
+
+// // ==========================================================================
+
+// .theme-toggle {
+//   --size: 2rem;
+//   --icon-fill: hsl(210 10% 30%);
+//   --icon-fill-hover: hsl(210 10% 15%);
+
+//   background: none;
+//   border: none;
+//   padding: 0;
+
+//   inline-size: var(--size);
+//   block-size: var(--size);
+//   aspect-ratio: 1;
+//   border-radius: 50%;
+
+//   cursor: pointer;
+//   touch-action: manipulation;
+//   -webkit-tap-highlight-color: transparent;
+
+//   outline-offset: 5px;
+
+//   & > svg {
+//     inline-size: 100%;
+//     block-size: 100%;
+//     stroke-linecap: round;
+//   }
+
+//   @nest [data-theme="dark"] & {
+//     --icon-fill: hsl(210 10% 70%);
+//     --icon-fill-hover: hsl(210 15% 90%);
+//   }
+
+//   @media (hover: none) {
+//     --size: 48px;
+//   }
+// }
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+
+  &[data-theme="dark"] {
+    color-scheme: dark;
+
+    @supports not (color-scheme: dark) {
+      background: #111;
+    }
+  }
 }
 
 .page {
@@ -21,11 +152,12 @@
 img {
   height: auto;
   max-width: 100%;
-  object-fit: cover;
+  // object-fit: cover;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .site-container {
@@ -37,13 +169,6 @@ a {
 
 .is-hidden {
   display: none !important; /* stylelint-disable-line declaration-no-important */
-}
-
-.btn-reset {
-  border: none;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
 }
 
 .list-reset {
@@ -67,10 +192,20 @@ a {
   }
 }
 
-.container {
+.container,
+.container-md {
   margin: 0 auto;
   padding: 0 $container-offset;
+}
+
+.container {
   max-width: $container-width;
+}
+
+.container-md {
+  margin: 0 auto;
+  padding: 0 $container-offset;
+  max-width: 1200px;
 }
 
 h1,
@@ -87,3 +222,176 @@ h6 {
 .footer {
   margin-top: auto;
 }
+
+main {
+  padding-top: 200px;
+  padding-bottom: 24px;
+}
+
+// **********************************************************************************************************************
+//                                                                                                              from test
+// **********************************************************************************************************************
+
+// html {
+//   box-sizing: border-box;
+// }
+
+// *,
+// *::before,
+// *::after {
+//   box-sizing: inherit;
+// }
+
+// .page {
+//   font-size: 18px;
+//   height: 100%;
+//   font-family: var(--font-family, sans-serif);
+//   -webkit-text-size-adjust: 100%;
+// }
+
+// .page__body {
+//   margin: 0;
+//   min-width: 320px;
+//   height: 100%;
+//   font-weight: 400;
+//   font-size: 1rem;
+//   font-weight: 400;
+//   line-height: 1.5;
+//   color: #212529;
+//   background-color: #fff;
+// }
+
+// .site-container {
+//   min-height: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   overflow: hidden;
+// если используете на сайте position: sticky - уберите эту настройку
+// }
+
+// .main {
+//   flex: 1 0 auto;
+//   padding-top: 136px;
+// }
+
+// [tabindex="-1"]:focus {
+//   outline: 0 !important;
+// }
+
+// // ================== bootstrap ===================
+// hr {
+//   margin-top: 1rem;
+//   margin-bottom: 1rem;
+//   border: 0;
+//   border-top: 1px solid rgba(255, 255, 255, 0.564);
+// }
+// // ================================================
+
+// .block-wrapper {
+//   padding: 10px;
+//   background-color: #eceff1;
+//   margin-bottom: 40px;
+// }
+
+// img {
+//   height: auto;
+//   max-width: 100%;
+//   // object-fit: cover;
+//   vertical-align: bottom;
+//   // vertical-align: middle;
+//   // vertical-align: top;
+//   border-style: none;
+// }
+
+// a {
+//   background-color: transparent;
+//   text-decoration: none;
+//   color: inherit;
+// }
+
+// p {
+//   margin: 0;
+// }
+
+// fieldset {
+//   min-width: 0;
+//   padding: 0;
+//   margin: 0;
+//   border: 0;
+// }
+
+// legend {
+//   display: block;
+//   width: 100%;
+//   max-width: 100%;
+//   padding: 0;
+//   margin-bottom: 20px;
+//   font-size: 24px;
+//   line-height: inherit;
+//   color: inherit;
+//   white-space: normal;
+// }
+
+// =============================================== Reset Btn ============================================
+// Для начала переопределим свойство appearance. Оно используется для стилизации, характерной для конкретной
+// платформы. Внешний вид кнопки при таком подходе основан на стилях, применяемых в операционной системе
+// пользователя.
+
+// .btn-reset {
+//   appearance: none;
+//   border: none;
+//   padding: 0;
+//   background-color: transparent;
+//   cursor: pointer;
+//   text-align: center;
+//   vertical-align: middle;
+//   user-select: none;
+// }
+
+// .list-reset {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// .input-reset {
+//   -webkit-appearance: none;
+//   appearance: none;
+//   border: none;
+//   border-radius: 0;
+//   background-color: #fff;
+
+//   &::-webkit-search-decoration,
+//   &::-webkit-search-cancel-button,
+//   &::-webkit-search-results-button,
+//   &::-webkit-search-results-decoration {
+//     display: none;
+//   }
+// }
+
+// .js-focus-visible :focus:not(.focus-visible) {
+//   outline: none;
+// }
+
+// .icon {
+//   height: 30px;
+//   width: 30px;
+//   vertical-align: bottom;
+// }
+
+// input[type="number"] {
+//   -moz-appearance: textfield;
+//   -webkit-appearance: textfield;
+//   appearance: textfield;
+// }
+
+// input[type="number"]::-webkit-outer-spin-button,
+// input[type="number"]::-webkit-inner-spin-button {
+//   display: none;
+// }
+
+// form
+
+// .form-group {
+//   margin-bottom: 20px;
+// }

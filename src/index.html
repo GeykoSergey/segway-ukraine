@@ -4,16 +4,21 @@
   <body class="page__body">
     <div class="site-container">
       @include('partials/header.html')
-      <main class="main">
-        @include('partials/hero.html')
-      <!-- @include('partials/presentation.html') -->
-      @include('partials/video-presentation.html')
-      @include('partials/product.html')
-      @include('partials/accessories.html')
-      @include('partials/order.html')
-
+      <main class="main fixed-block" id="up">
+        <!-- @include('partials/hero.html') -->
+        <!-- @include('partials/video-presentation.html') -->
+        <!-- @include('partials/product.html') @include('partials/accessories.html') -->
+        <!-- @include('partials/order.html') -->
       </main>
-      @include('partials/footer.html')
+      <!-- @include('partials/footer.html') -->
     </div>
+
+    <a href="#up" class="to-up">
+      <svg
+        class="icon to-up__icon view-mode__icon--grid view-mode__icon--no-active"
+      >
+        <use xlink:href="img/sprite.svg#icon-up"></use>
+      </svg>
+    </a>
   </body>
 </html>

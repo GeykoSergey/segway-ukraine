@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "inStock": true,
+    "top": false,
+    "novelty": false,
+    "discount": true,
+    "title": "Look 977 BLACK FLUO YELLOW GREEN XT 2x11S AMC 2018",
+    "price": 750,
+    "imgSrc": "product-1.jpg"
+  },
+  {
+    "id": 2,
+    "inStock": false,
+    "top": false,
+    "novelty": true,
+    "discount": true,
+    "title": "Trek Marlin 5 Lithium Grey Chrome ATB 27.5 2022",
+    "price": 1000,
+    "imgSrc": "product-1.jpg"
+  },
+  {
+    "id": 3,
+    "inStock": false,
+    "top": true,
+    "novelty": false,
+    "discount": true,
+    "title": "Scott Scale 700 RS 2016",
+    "price": 600,
+    "imgSrc": "product-1.jpg"
+  }
+]

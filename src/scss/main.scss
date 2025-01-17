@@ -3,14 +3,58 @@
 @import "fonts";
 @import "settings";
 @import "utils";
+@import "common";
 @import "./components/controls/btn";
+// @import "./components/controls/theme-switch";
+@import "./components/controls/super-btn";
+@import "./components/small-component";
 @import "./components/header";
 @import "./components/nav";
 @import "./components/video-presentation";
-@import "./components/hero";
+// @import "./components/hero";
 @import "./components/features";
 @import "./components/product";
-@import "./components/accessories";
 @import "./components/order";
 @import "./components/footer";
 @import "./components/test";
+@import "./vendor/nouislider";
+
+@import "./must-be-removed/forms/digital-ocean-form";
+
+@import "./must-be-removed/basic-construction/containers/containers";
+
+@import "./must-be-removed/components/tabs/tabs";
+// @import "./must-be-removed/forms/reg-form";
+
+// @import "./must-be-removed/to-do/_to-do.scss";
+
+//Controls
+@import "./must-be-removed/controls/star-rating";
+@import "./must-be-removed/controls/standart-select";
+@import "./must-be-removed/controls/combobox";
+@import "./must-be-removed/controls/custom-checkbox-input-in-label";
+@import "./must-be-removed/controls/custom-checkbox";
+@import "./must-be-removed/controls/range-slider";
+@import "./must-be-removed/controls/toggle";
+
+// Components
+@import "./must-be-removed/components/modal/modal";
+@import "./must-be-removed/components/accordeon/accordeon";
+@import "./must-be-removed/to-up-btn";
+
+@import "./must-be-removed/basic-construction/cards/profile-card";
+
+// OS
+@import "./must-be-removed/os/os-header";
+@import "./must-be-removed/os/os-breadcrumbs";
+@import "./must-be-removed/os/os-product-card";
+@import "./must-be-removed/os/os-catalog";
+@import "./must-be-removed/os/os-filter";
+@import "./must-be-removed/os/os-catalog-dashboard";
+@import "./must-be-removed/os/os-product";
+@import "./must-be-removed/os/os-pagination";
+@import "./must-be-removed/controls/dropdown";
+
+// flex
+@import "./must-be-removed/basic-construction/flex/responsive";
+@import "./must-be-removed/basic-construction/flex/images";

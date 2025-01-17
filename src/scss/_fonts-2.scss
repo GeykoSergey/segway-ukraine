@@ -1,0 +1,40 @@
+// @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+
+@font-face {
+  font-family: 'SF-Regular', sans-serif;
+  src: url('../resources/fonts/SFUIDisplay-Regular.woff2') format('woff2'),
+       url('../resources/fonts/SFUIDisplay-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF-Medium', sans-serif;
+  src: url('../resources/fonts/SFUIDisplay-Medium.woff2') format('woff2'),
+       url('../resources/fonts/SFUIDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF-Bold', sans-serif;
+  src: url('../resources/fonts/SFUIDisplay-Bold.woff2') format('woff2'),
+       url('../resources/fonts/SFUIDisplay-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'bebas-neue-cyrillic-regular', sans-serif;
+  src: url('./resources/fonts/bebas-neue-cyrillic-regular.woff2') format('woff2'),
+       url('./resources/fonts/bebas-neue-cyrillic-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+// https://en.bestfonts.pro/
+// https://webfonts.pro/

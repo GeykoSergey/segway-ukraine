@@ -1,0 +1,15 @@
+.header-banner {
+  position: relative;
+  z-index: 3;
+  background-color: var(--color-bg-main);
+
+  &__container {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    color: var(--white);
+  }
+}

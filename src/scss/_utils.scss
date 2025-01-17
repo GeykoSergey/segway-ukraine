@@ -12,6 +12,7 @@
   position: relative;
 }
 
+// =============================
 .visually-hidden {
   position: absolute;
   z-index: -1;
@@ -21,6 +22,32 @@
   padding: 0;
   width: 0;
   height: 0;
+}
+
+.sr-only {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+// =============================
+
+
+.img-wrap {
+  position: relative;
+  width: 30%;
+}
+
+.img-wrap:before {
+  content: '';
+  display: block;
+  padding-bottom: 60%;
 }
 
 .cover-pic,
@@ -48,4 +75,21 @@
   margin-bottom: 40px;
   padding: 10px;
   background-color: hsl(0deg, 0%, 95%);
+}
+
+// ============================
+.none {
+	display: none !important;
+}
+
+.is-hidden {
+  display: none !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+	display: block;
 }

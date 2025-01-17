@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html')
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/os_header.html')
+      <main class="main">
+        <!-- <div class="container">
+          <button class="cart__btn reset-btn" data-modal-button type="button">
+            Cart
+          </button>
+        </div> -->
+
+        @include('partials/os_breadcrumb.html')
+
+        <!-- <div class="container">
+          <div class="product__wrapper">
+            <div class="product">
+              <div class="product__header">
+                <div class="product__promo product-promo">
+                  <ul class="list-reset product-promo__list">
+                    <li
+                      class="product-promo__item product-promo__item--top-sellers"
+                      title="Топ продажу"
+                    >
+                      ТОП
+                    </li>
+                    <li
+                      class="product-promo__item product-promo__item--discount"
+                    >
+                      -25%
+                    </li>
+                    <li
+                      class="product-promo__item product-promo__item--present"
+                    >
+                      New
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <a href="#" class="product__link">
+                <p class="product__hover-text">посмотреть товар</p>
+                <div class="product__image">
+                  <img src="../img/wb-products/product-1.jpg" alt="" />
+                </div>
+
+                <h4 class="product__title">
+                  Look 977 BLACK FLUO YELLOW GREEN XT 2x11S AMC 2018
+                </h4>
+              </a>
+              <div class="product__model-color-swatch model-color-swatch">
+                <ul class="list-reset model-color-swatch__list">
+                  <li
+                    class="model-color-swatch__item model-color-swatch__item--red"
+                  >
+                    &nbsp;
+                  </li>
+                  <li
+                    class="model-color-swatch__item model-color-swatch__item--black"
+                  >
+                    &nbsp;
+                  </li>
+                  <li
+                    class="model-color-swatch__item model-color-swatch__item--green"
+                  >
+                    &nbsp;
+                  </li>
+                </ul>
+              </div>
+              <div class="product__actions">
+                <div class="product__feedback">
+                  <div class="rating-mini">
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="product__reviews">
+                    <button class="btn-reset icon-lg reviews__btn"></button>
+                    <div class="reviews__count">27</div>
+                  </div>
+                </div>
+                <button class="btn-reset icon-lg compare__btn"></button>
+                <button class="btn-reset icon-lg favorite__btn"></button>
+              </div>
+
+              <div class="product__footer">
+                <div class="product__price">
+                  <span class="product__price product__price--old"
+                    >10000 $</span
+                  >
+                  <span class="product__price product__price--new">9900 $</span>
+                  <span class="product__notyfi">нет в наличии</span>
+                </div>
+
+                <button class="btn-reset btn product__btn">
+                  <img src="../img/e-commerce/icon/shopping_cart.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- ******************************************************************** -->
+        <!-- filter -->
+        <!-- ******************************************************************** -->
+
+        <section class="catalog">
+          <div class="container">
+            <div class="catalog__container">
+              <h1 class="catalog__title">Гірські велосипеди</h1>
+              <div class="catalog__main">
+                @include('partials/os_filter.html')
+                <div class="products">
+                  @include('partials/os_catalog-dashboard.html')
+                  @include('partials/os_products.html')
+                  @include('partials/os_pagination.html')
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- product-card start -->
+        <div class="product-card">
+          <div class="container">
+            <h1 class="product-card__title">GTX Limited 300</h1>
+            <div class="product-card__container">
+              <div class="product-card__img-wrapper">
+                <div class="product-card__img-content">
+                  <img
+                    class="product-card__img"
+                    src="./img/e-commerce/sea-doo/product-1.png"
+                    alt=""
+                  />
+                </div>
+
+                <div class="product-card__option product-option">
+                  <label class="swap-color">
+                    <input
+                      class="swap-color__input"
+                      type="radio"
+                      name="swap-color"
+                      checked
+                      data-src-img="./img/e-commerce/sea-doo/product-1.png"
+                    />
+                    <span class="swap-color__btn"></span>
+                  </label>
+                  <label class="swap-color">
+                    <input
+                      class="swap-color__input"
+                      type="radio"
+                      name="swap-color"
+                      data-src-img="./img/e-commerce/sea-doo/product-3.png"
+                    />
+                    <span class="swap-color__btn"></span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- tabs start -->
+              <div class="tabs-container">
+                <div class="tabs tabs-product-card" id="mytab-2">
+                  <ul class="list-reset tabs-control-list">
+                    <li class="tabs-control__item" data-tab="tab-1">
+                      Про товар
+                    </li>
+                    <li class="tabs-control__item" data-tab="tab-2">
+                      Характеристики
+                    </li>
+                    <li class="tabs-control__item" data-tab="tab-3">
+                      Гарантія
+                    </li>
+                  </ul>
+
+                  <div class="tabs-content" data-tab-content="tab-1">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Minus, ducimus fugit corrupti culpa libero quam mollitia
+                      magni pariatur.
+                    </p>
+                  </div>
+
+                  <div class="card p-3 hidden" data-tab-content="tab-2">
+                    <table class="table">
+                      <thead>
+                        <th>Specification</th>
+                        <th>Value</th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Engine</td>
+                          <td>300</td>
+                        </tr>
+                        <tr>
+                          <td>Type</td>
+                          <td>1630 ACE™- 300</td>
+                        </tr>
+                        <tr>
+                          <td>Engine Horse Power</td>
+                          <td>300 hp</td>
+                        </tr>
+                        <tr>
+                          <td>Cylinders & Displacement</td>
+                          <td>1630 cc</td>
+                        </tr>
+                        <tr>
+                          <td>Engine cooling</td>
+                          <td>Closed-Loop Cooling System</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="card p-3 hidden" data-tab-content="tab-3">
+                    <p>
+                      Обмежена гарантія BRP поширюється на гідроцикл протягом
+                      одного року.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- tabs end -->
+            </div>
+          </div>
+        </div>
+        <!-- product-card end -->
+      </main>
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>

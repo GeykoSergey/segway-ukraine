@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html')
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header.html')
+      <main class="main">
+        <!-- **************************************************************** -->
+        <!--                                                          Buttons -->
+        <!-- **************************************************************** -->
+        <div class="container">
+          <h1 class="section-title">Buttons</h1>
+
+          <div class="tpl-block">
+            <a class="btn-reset btn-primary" href="#" role="button">Link</a>
+          </div>
+
+          <div class="tpl-block">
+            <button class="btn-reset btn-primary" type="button">Button</button>
+            <button class="btn-reset btn-primary" type="submit">Submit</button>
+            <button class="btn-reset btn-primary" disabled>Disabled</button>
+            <button class="btn-reset btn-primary" type="reset">Reset</button>
+          </div>
+
+          <!-- **************************************************************** -->
+          <!-- В других случаях -->
+          <!-- **************************************************************** -->
+
+          <!-- <div class="block">
+            <input class="btn-reset btn-primary" type="button" value="Input" />
+            <input class="btn-reset btn-primary" type="submit" value="Submit" />
+            <input class="btn-reset btn-primary" type="reset" value="Reset" />
+          </div> -->
+
+          <!-- <div class="block">
+            <div class="btn-reset btn-primary" role="button">Div</div>
+          </div> -->
+
+          <!-- **************************************************************** -->
+          <!-- Icon Buttons -->
+          <!-- **************************************************************** -->
+          <div class="tpl-block">
+            <button
+              class="btn-reset btn-primary btn-icon"
+              aria-label="Watch on YouTube"
+            >
+              <span>Watch on YouTube</span>
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                width="24"
+                height="18"
+                viewBox="0 0 24 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24.4776 3.01659C24.1901 1.90799 23.3429 1.0349 22.2673 0.738602C20.3177 0.200195 12.5 0.200195 12.5 0.200195C12.5 0.200195 4.68232 0.200195 2.73266 0.738602C1.65706 1.03495 0.80992 1.90799 0.522399 3.01659C0 5.02598 0 9.21838 0 9.21838C0 9.21838 0 13.4108 0.522399 15.4202C0.80992 16.5288 1.65706 17.3655 2.73266 17.6618C4.68232 18.2002 12.5 18.2002 12.5 18.2002C12.5 18.2002 20.3177 18.2002 22.2673 17.6618C23.3429 17.3655 24.1901 16.5288 24.4776 15.4202C25 13.4108 25 9.21838 25 9.21838C25 9.21838 25 5.02598 24.4776 3.01659ZM9.94316 13.0248V5.41199L16.4772 9.21848L9.94316 13.0248Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+
+            <button class="btn-reset btn-primary btn-icon" type="button">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- ***************************************************************** -->
+        <!-- Digital Ocean -->
+        <!-- ***************************************************************** -->
+        <div class="container">
+          <h1 class="section-title">Digital Ocean</h1>
+          <form>
+            <div class="form-field">
+              <label class="large-label" for="name">Name</label>
+              <input
+                id="name"
+                type="text"
+                placeholder="First or Full Name"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-field">
+              <label class="large-label" for="email">Email</label>
+              <input id="email" type="email" placeholder="name@example.com" />
+            </div>
+            <div class="form-field">
+              <label class="large-label" for="comp"
+                >Favorite CSS Compiler</label
+              >
+              <select id="comp">
+                <option value="sass">Sass</option>
+                <option value="less">Less</option>
+                <option value="stylus">Stylus</option>
+                <option value="postcss">PostCSS</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <fieldset>
+                <legend>Are you familiar with CSS Grid?</legend>
+                <input type="radio" name="grid" id="yes" value="yes" />
+                <label class="small-label" for="yes">Yes</label>
+                <input type="radio" name="grid" id="no" value="no" />
+                <label class="small-label" for="no">No</label>
+              </fieldset>
+            </div>
+            <div class="form-field full-width">
+              <label class="large-label" for="message">Message</label>
+              <textarea id="message" placeholder="Leave a message…"></textarea>
+            </div>
+            <div class="form-field full-width">
+              <input type="checkbox" id="newsletter" />
+              <label class="small-label" for="newsletter"
+                >Receive our newsletter?</label
+              >
+            </div>
+            <div class="form-field full-width">
+              <button type="submit">Send Response</button>
+              <button type="reset">Clear Form</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- ***************************************************************** -->
+        <!-- Reg Form -->
+        <!-- ***************************************************************** -->
+        <!-- <div class="container">
+          <h1 class="section-title">Reg Form</h1>
+          <form action="#" name="regForm">
+            <header id="form-header">
+              <h1>Регистрация</h1>
+            </header>
+
+            <section id="form-fields">
+              <div class="form-field">
+                <label for="firstname">Имя</label>
+                <input
+                  id="firstname"
+                  type="text"
+                  name="firstname"
+                  placeholder="First name"
+                />
+
+                <p class="error" name="length">
+                  Длина имени должна быть больше 3
+                </p>
+                <p class="error" name="alphabet">
+                  Имя должно содержать только кириллицу
+                </p>
+              </div>
+              <div class="form-field">
+                <label for="lastname">Фамилия</label>
+                <input
+                  id="lastname"
+                  type="text"
+                  name="lastname"
+                  placeholder="Last name"
+                />
+
+                <p class="error" name="length">
+                  Длина фамилии должна быть больше 4
+                </p>
+                <p class="error" name="alphabet">
+                  Фамилия должна содержать только кириллицу
+                </p>
+              </div>
+              <div class="form-field">
+                <label for="email">Почта</label>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                />
+
+                <p class="error" name="emailError">Введите почту правильно</p>
+              </div>
+              <div class="form-field">
+                <label for="password">Придумайте пароль</label>
+                <input
+                  id="password"
+                  type="password"
+                  name="password"
+                  placeholder="********"
+                />
+
+                <p class="error" name="length">Длина должна быть не меньше 8</p>
+                <p class="error" name="digit">Хотя бы одна цифра</p>
+                <p class="error" name="uppercase">
+                  Хотя бы одна заглавная буква
+                </p>
+                <p class="error" name="lowercase">
+                  Хотя бы одна прописная буква
+                </p>
+                <p class="error" name="punctuation">
+                  Хотя бы один знак пунктуации: .,?\/#!$%\^&\*;:{}=\-_`~()
+                </p>
+              </div>
+            </section>
+
+            <button type="submit">Зарегистрироваться</button>
+          </form>
+        </div> -->
+
+        <!-- <div id="modal">
+          <h1>Все ок!</h1>
+        </div> -->
+
+        <!-- Также можем вкладывать input в label -->
+        <!-- Но крайне рекомендуется прописывать for и id -->
+        <!-- <label for="input">
+            <span >Name</span>
+            <input id="input" type="text" placeholder="Name">
+          </label> -->
+
+        <!-- ***************************************************************** -->
+        <!--  -->
+        <!-- ***************************************************************** -->
+
+        <!-- <div class="container">
+          <h1>Personnel Registration Form</h1>
+          <form id="myForm">
+            <section class="group-one" id="one">
+              <div class="form-group">
+                <div class="form-control">
+                  <label for="name">
+                    Name
+                    <span style="color: red">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    aria-required="true"
+                  />
+                  <span
+                    id="name-error"
+                    class="error-message"
+                    role="alert"
+                  ></span>
+                </div>
+                <div class="form-control">
+                  <label for="idNum">
+                    ID number
+                    <span style="color: red">*</span>
+                  </label>
+                  <input
+                    type="number"
+                    id="idNum"
+                    name="idNum"
+                    placeholder="Enter your ID number"
+                    aria-required="true"
+                  />
+                  <span id="id-error" class="error-message" role="alert"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-control">
+                  <label for="email">
+                    Email
+                    <span style="color: red">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    aria-required="true"
+                  />
+                  <span
+                    id="email-error"
+                    class="error-message"
+                    role="alert"
+                  ></span>
+                </div>
+                <div class="form-control">
+                  <label for="birthdate">
+                    Date of Birth
+                    <span style="color: red">*</span>
+                  </label>
+                  <input
+                    type="date"
+                    id="birthdate"
+                    name="birthdate"
+                    max="2006-10-01"
+                    min="1924-01-01"
+                    aria-required="true"
+                  />
+                  <span id="bd-error" class="error-message" role="alert"></span>
+                  <span id="error"></span>
+                </div>
+              </div>
+            </section>
+            <section class="group-two" id="two">
+              <div class="form-control">
+                <label for="document">
+                  Upload CV/Resume
+                  <span style="color: red">*</span>
+                </label>
+                <input
+                  type="file"
+                  name="document"
+                  id="document"
+                  accept=".pdf,.doc,.docx"
+                  aria-required="true"
+                />
+                <span id="doc-error" class="error-message" role="alert"></span>
+              </div>
+              <div class="form-control">
+                <label for="department">
+                  Department
+                  <span style="color: red">*</span>
+                </label>
+                <select id="department" name="department" aria-required="true">
+                  <option value="">Select a department</option>
+                  <option value="hr">Human Resources</option>
+                  <option value="it">Information Technology</option>
+                  <option value="finance">Finance</option>
+                  <option value="marketing">Marketing</option>
+                </select>
+                <span id="dept-error" class="error-message" role="alert"></span>
+              </div>
+            </section>
+            <section class="group-three" id="three">
+              <div class="form-control">
+                <label for="skills">Skills (Optional)</label>
+                <textarea
+                  id="skills"
+                  name="skills"
+                  rows="4"
+                  placeholder="Enter your skills"
+                ></textarea>
+              </div>
+              <div class="form-control">
+                <input
+                  type="checkbox"
+                  name="terms"
+                  id="terms"
+                  aria-required="true"
+                />
+                <label for="terms">
+                  I agree to the terms and conditions
+                  <span style="color: red">*</span>
+                </label>
+                <span
+                  id="terms-error"
+                  class="error-message"
+                  role="alert"
+                ></span>
+              </div>
+            </section>
+            <section class="group-four" id="four" aria-label="Form Summary">
+              <div class="summary-section">
+                <p>Name:</p>
+                <p id="name-val"></p>
+                <button class="edit-btn" id="name-edit">
+                  <span>✎</span>
+                  <span>Edit</span>
+                </button>
+              </div>
+              <div class="summary-section">
+                <p>ID Number:</p>
+                <p id="id-val"></p>
+                <button class="edit-btn" id="id-edit">
+                  <span>✎</span>
+                  <span>Edit</span>
+                </button>
+              </div>
+              <div class="summary-section">
+                <p>Email:</p>
+                <p id="email-val"></p>
+                <button class="edit-btn" id="email-edit">
+                  <span>✎</span>
+                  <span>Edit</span>
+                </button>
+              </div>
+              <div class="summary-section">
+                <p>Date of Birth:</p>
+                <p id="bd-val"></p>
+                <button class="edit-btn" id="bd-edit">
+                  <span>✎</span>
+                  <span>Edit</span>
+                </button>
+              </div>
+              <div class="summary-section">
+                <p>CV/Resume:</p>
+                <p id="cv-val"></p>
+                <button class="edit-btn" id="cv-edit">
+                  <span>✎</span>
+                  <span>Edit</span>
+                </button>
+              </div>
+              <div class="summary-section">
+                <p>Department:</p>
+                <p id="dept-val"></p>
+                <button class="edit-btn" id="dept-edit">
+                  <span>✎</span>
+                  <span>Edit</span>
+                </button>
+              </div>
+              <div class="summary-section">
+                <p>Skills:</p>
+                <p id="skills-val"></p>
+                <button class="edit-btn" id="skills-edit">
+                  <span>✎</span>
+                  <span>Edit</span>
+                </button>
+              </div>
+
+              <button id="btn" type="submit">Confirm and Submit</button>
+            </section>
+            <div class="arrows">
+              <button
+                class="nav-group"
+                id="navLeft"
+                type="button"
+                aria-label="Previous step"
+              >
+                <span class="arrow-left">&#8592;</span>
+                <span>Previous</span>
+              </button>
+              <span id="stepInfo" role="status" aria-live="polite"></span>
+              <button
+                class="nav-group"
+                id="navRight"
+                type="button"
+                aria-label="Next step"
+              >
+                <span>Next</span>
+                <span class="arrow-right">&#8594;</span>
+              </button>
+            </div>
+          </form>
+        </div> -->
+      </main>
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>

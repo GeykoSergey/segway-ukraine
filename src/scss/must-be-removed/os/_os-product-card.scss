@@ -1,0 +1,110 @@
+.product-card {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+  }
+
+  &__img-wrapper {
+    flex: 0 0 50%;
+  }
+
+  &__img-content {
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+
+  &__option {
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    &__img-wrapper {
+      flex: 1 1 100%;
+    }
+  }
+  .tabs-container {
+    flex: 1 1 100%;
+    padding: 20px;
+  }
+}
+
+.product-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.product-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.swap-color {
+  position: relative;
+  height: 32px;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 64px;
+  }
+
+  &__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  &__btn {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #37474f;
+    top: 0;
+    left: 0;
+  }
+
+  // &__btn::after {
+  //   content: '';
+  //   position: absolute;
+  //   z-index: 5;
+  //   width: 26px;
+  //   height: 26px;
+  //   border: 2px solid #37474f;
+  //   top: -50%;
+  //   left: -50%;
+  // }
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead th {
+  width: 50%;
+  text-align: left;
+  padding: 10px;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #eceff1;
+}
+
+.table tbody tr td {
+  width: 50%;
+  padding: 10px;
+}
+
+.tabs-container {
+  flex: 1 1 50%;
+  padding: 20px;
+}

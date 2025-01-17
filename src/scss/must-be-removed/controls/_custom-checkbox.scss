@@ -1,0 +1,85 @@
+.custom-checkbox {
+  width: 100%;
+}
+
+.custom-checkbox__input {
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.custom-checkbox__input + label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  line-height: 1;
+  font-size: 18px;
+  padding-top: 6px;
+}
+
+.custom-checkbox__input + label::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #c3c3c3;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-color: #fff;
+  background-size: 50% 50%;
+}
+
+.custom-checkbox__input:checked + label::before {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-image: url("../img/tpl/icons/checked.svg");
+  background-color: rgb(106, 200, 237);
+}
+
+.custom-checkbox__input:checked:focus + label::before {
+  box-shadow: 0 0 0 2px #b0bec5;
+}
+
+.custom-checkbox__input:not(:disabled):not(:checked) + label:hover::before {
+  border-color: rgba(0, 0, 255, 0.33);
+  box-shadow: 0 0 0 2px #b0bec5;
+}
+
+.custom-checkbox__input:disabled + label::before {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 18px 18px;
+  background-color: #fff;
+  background-image: url("../img/tpl/icons/disabled.svg");
+}
+
+.custom-checkbox__input:disabled + label,
+.custom-checkbox__input:checked:disabled + label,
+.custom-checkbox__input:disabled + label::before {
+  cursor: auto;
+}
+
+// .custom-checkbox:not(:disabled):active + label::before {
+//   background-color: rgba(0, 0, 255, 0.66);
+// }
+// .custom-checkbox:focus + label::before {
+//   box-shadow: 0 0 0 0.2rem rgba(0, 0, 255, 0.125);
+// }
+// .custom-checkbox:focus:not(:checked) + label::before {
+//   border-color: #c3c3c3;
+// }
+// .custom-checkbox:disabled + label::before {
+//   background-color: black;
+// }

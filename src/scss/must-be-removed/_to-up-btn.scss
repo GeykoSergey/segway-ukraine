@@ -1,0 +1,22 @@
+.to-up {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 10%;
+  background-color: #d6d4d4;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.to-up.to-up-hidden {
+  display: flex;
+}
+
+.rel {
+  position: relative;
+}
